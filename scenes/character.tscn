@@ -1,0 +1,56 @@
+[gd_scene load_steps=11 format=3 uid="uid://dd06y6yukgv6n"]
+
+[ext_resource type="Script" path="res://scripts/character.gd" id="1_20ugd"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="2_gww64"]
+[ext_resource type="Resource" uid="uid://x4gijbt81emy" path="res://GreenMask.tres" id="3_73d8y"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="4_hhm68"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="5_fr242"]
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeMatrix.gd" id="6_1ay07"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2wbmn"]
+size = Vector2(32, 32)
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_kt3jd"]
+script = ExtResource("4_hhm68")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_o1hwu"]
+script = ExtResource("5_fr242")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_hvb7j"]
+script = ExtResource("6_1ay07")
+
+[node name="Character" type="Area2D"]
+script = ExtResource("1_20ugd")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+mouse_filter = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 1
+shape = SubResource("RectangleShape2D_2wbmn")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 63.0
+offset_top = 32.0
+offset_right = 255.0
+offset_bottom = 160.0
+mouse_filter = 2
+
+[node name="DialogueBox" type="Panel" parent="Control"]
+visible = false
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 120.0
+offset_bottom = 120.0
+script = ExtResource("2_gww64")
+data = ExtResource("3_73d8y")
+custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_kt3jd"), SubResource("RichTextEffect_o1hwu"), SubResource("RichTextEffect_hvb7j")])
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
