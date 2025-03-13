@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ba12qpce4i71l" path="res://assets/clock.png" id="1_xtq2g"]
 [ext_resource type="Script" path="res://scripts/clock.gd" id="2_ed5id"]
-[ext_resource type="Texture2D" uid="uid://h456pu5mjlfi" path="res://assets/Clock-Hands-PNG-Images-2838909618.png" id="3_s21sk"]
+[ext_resource type="Texture2D" uid="uid://h456pu5mjlfi" path="res://assets/clock_hand.png" id="3_s21sk"]
 
 [node name="Clock" type="Sprite2D"]
 position = Vector2(64, 64)

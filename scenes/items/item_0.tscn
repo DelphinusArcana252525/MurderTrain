@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cskvcjjv7avmo"]
+
+[ext_resource type="Texture2D" uid="uid://dw7vh331ja3r6" path="res://assets/temp/tempItemAssets/item_0.png" id="1_tnii6"]
+
+[node name="Item0" type="Panel"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("1_tnii6")

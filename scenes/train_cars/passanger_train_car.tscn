@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dvdev0cihpcus"]
 
-[ext_resource type="Texture2D" uid="uid://cpei3o6gyeq6k" path="res://assets/passanger_train_car.png" id="1_80mml"]
+[ext_resource type="Texture2D" uid="uid://cpei3o6gyeq6k" path="res://assets/train_cars/passanger_train_car.png" id="1_80mml"]
 
 [node name="PassangerTrainCar" type="PanelContainer"]
 offset_right = 40.0

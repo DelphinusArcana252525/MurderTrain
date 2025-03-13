@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck156cwubslk7"]
+
+[ext_resource type="Texture2D" uid="uid://5kn3v4wr4ett" path="res://assets/inventory.png" id="1_4r1u5"]
+[ext_resource type="Script" path="res://scripts/inventory.gd" id="1_h7ika"]
+
+[node name="Inventory" type="Node2D"]
+script = ExtResource("1_h7ika")
+
+[node name="InventoryBackground" type="Sprite2D" parent="."]
+position = Vector2(316, 42)
+texture = ExtResource("1_4r1u5")
+region_enabled = true
+region_rect = Rect2(103, 426, 632, 84)
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 46.0
+offset_top = 40.0
+offset_right = 97.0
+offset_bottom = 92.0
+theme_override_constants/h_separation = 60
+columns = 10
