@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://d08unfm1djku"]
+
+[ext_resource type="Texture2D" uid="uid://cicipjhapwyjo" path="res://assets/beige_train_car.png" id="1_ahms6"]
+
+[node name="BeigeTrainCar" type="PanelContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ahms6")

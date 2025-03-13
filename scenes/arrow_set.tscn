@@ -7,11 +7,11 @@
 script = ExtResource("1_ebrq2")
 
 [node name="LeftArrow" parent="." instance=ExtResource("1_ugg40")]
-position = Vector2(53, 319)
+position = Vector2(32, 0)
 rotation = 3.14159
 
 [node name="RightArrow" parent="." instance=ExtResource("1_ugg40")]
-position = Vector2(1090, 326)
+position = Vector2(1120, 0)
 
 [connection signal="clicked" from="LeftArrow" to="." method="_on_left_arrow_clicked"]
 [connection signal="clicked" from="RightArrow" to="." method="_on_right_arrow_clicked"]

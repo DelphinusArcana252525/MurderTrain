@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://byd0yup8koql0"]
+
+[ext_resource type="PackedScene" uid="uid://d08unfm1djku" path="res://scenes/train_cars/beige_train_car.tscn" id="1_natgr"]
+[ext_resource type="Script" path="res://scripts/train.gd" id="1_rnyo6"]
+[ext_resource type="PackedScene" uid="uid://dvdev0cihpcus" path="res://scenes/train_cars/passanger_train_car.tscn" id="2_da0vd"]
+[ext_resource type="PackedScene" uid="uid://cut8ufxccprv2" path="res://scenes/train_cars/brow_train_car.tscn" id="3_2e1ol"]
+
+[node name="Train" type="Node2D"]
+script = ExtResource("1_rnyo6")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_right = 447.0
+offset_bottom = 173.0
+theme_override_constants/h_separation = 256
+columns = 10
+
+[node name="BeigeTrainCar" parent="GridContainer" instance=ExtResource("1_natgr")]
+layout_mode = 2
+
+[node name="PassangerTrainCar" parent="GridContainer" instance=ExtResource("2_da0vd")]
+layout_mode = 2
+
+[node name="BrowTrainCar" parent="GridContainer" instance=ExtResource("3_2e1ol")]
+layout_mode = 2
