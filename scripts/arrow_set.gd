@@ -1,5 +1,7 @@
 extends Node2D
 
+@onready var train: Node2D = $"../Train"
+
 func _input(event):
 	if event.is_action_released("left_input"):
 		go_left()
@@ -13,7 +15,7 @@ func _on_right_arrow_clicked() -> void:
 	go_right()
 
 func go_left():
-	print("left input given")
+	train.go_left()
 
 func go_right():
-	print("right input given")
+	train.go_right()

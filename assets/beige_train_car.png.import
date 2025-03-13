@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ba12qpce4i71l"
-path="res://.godot/imported/10-109831_clock-antique-2012982712.png-ec8ecbbe38ddc2a203b578a560f593b6.ctex"
+uid="uid://cicipjhapwyjo"
+path="res://.godot/imported/beige_train_car.png-a2330fa5fd87fffaff71a75bc403806c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/10-109831_clock-antique-2012982712.png"
-dest_files=["res://.godot/imported/10-109831_clock-antique-2012982712.png-ec8ecbbe38ddc2a203b578a560f593b6.ctex"]
+source_file="res://assets/beige_train_car.png"
+dest_files=["res://.godot/imported/beige_train_car.png-a2330fa5fd87fffaff71a75bc403806c.ctex"]
 
 [params]
 
