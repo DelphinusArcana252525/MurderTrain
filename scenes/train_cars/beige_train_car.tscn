@@ -1,10 +1,37 @@
-[gd_scene load_steps=2 format=3 uid="uid://d08unfm1djku"]
+[gd_scene load_steps=4 format=3 uid="uid://d08unfm1djku"]
 
 [ext_resource type="Texture2D" uid="uid://cicipjhapwyjo" path="res://assets/train_cars/beige_train_car.png" id="1_ahms6"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_tna14"]
+polygon = PackedVector2Array(-113, -61, -108, -61, -108, -24, -113, -24)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_rabnd"]
+polygon = PackedVector2Array(-112, -19, -112, -24, 112, -24, 112, -19)
 
 [node name="BeigeTrainCar" type="PanelContainer"]
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="TrainCarShadowBox" type="Node" parent="."]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
 texture = ExtResource("1_ahms6")
+
+[node name="TrainCarLightOccluders" type="Node2D" parent="Node2D"]
+
+[node name="LeftLightOccluder2D" type="LightOccluder2D" parent="Node2D/TrainCarLightOccluders"]
+position = Vector2(1, 42)
+occluder = SubResource("OccluderPolygon2D_tna14")
+
+[node name="RightLightOccluder2D" type="LightOccluder2D" parent="Node2D/TrainCarLightOccluders"]
+position = Vector2(220, 42)
+occluder = SubResource("OccluderPolygon2D_tna14")
+
+[node name="TopLightOccluder2D" type="LightOccluder2D" parent="Node2D/TrainCarLightOccluders"]
+occluder = SubResource("OccluderPolygon2D_rabnd")
+
+[node name="BottomLightOccluder2D" type="LightOccluder2D" parent="Node2D/TrainCarLightOccluders"]
+position = Vector2(0, 42)
+occluder = SubResource("OccluderPolygon2D_rabnd")

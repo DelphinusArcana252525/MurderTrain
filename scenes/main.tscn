@@ -1,10 +1,19 @@
-[gd_scene load_steps=6 format=3 uid="uid://dtq0bgudccr58"]
+[gd_scene load_steps=8 format=3 uid="uid://dtq0bgudccr58"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_qqq60"]
 [ext_resource type="Texture2D" uid="uid://wqvcbm72okl5" path="res://assets/Background.png" id="2_hqkgb"]
 [ext_resource type="PackedScene" uid="uid://dkrmtom5u3jm0" path="res://scenes/arrow_set.tscn" id="3_65k0i"]
 [ext_resource type="PackedScene" uid="uid://ck156cwubslk7" path="res://scenes/inventory.tscn" id="4_icton"]
 [ext_resource type="PackedScene" uid="uid://byd0yup8koql0" path="res://scenes/train.tscn" id="4_k3nma"]
+
+[sub_resource type="Gradient" id="Gradient_upoxk"]
+offsets = PackedFloat32Array(0, 0.753247)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8n5y0"]
+gradient = SubResource("Gradient_upoxk")
+fill = 1
+fill_from = Vector2(0.522936, 0.490826)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_qqq60")
@@ -14,14 +23,43 @@ position = Vector2(616, 50)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_hqkgb")
 region_rect = Rect2(16, 0, 175.505, 787)
+metadata/_edit_lock_ = true
 
-[node name="ArrowSet" parent="." instance=ExtResource("3_65k0i")]
-position = Vector2(2, 198)
+[node name="Tint2" type="ColorRect" parent="."]
+offset_right = 1150.0
+offset_bottom = 650.0
+color = Color(0, 0, 0, 0.301961)
+metadata/_edit_lock_ = true
 
 [node name="Train" parent="." instance=ExtResource("4_k3nma")]
 position = Vector2(567, 406)
 scale = Vector2(4.5, 4.5)
+metadata/_edit_lock_ = true
 
 [node name="Inventory" parent="." instance=ExtResource("4_icton")]
 position = Vector2(166, 1.19209e-07)
 scale = Vector2(1.25, 1.25)
+
+[node name="Tint" type="ColorRect" parent="."]
+offset_right = 1150.0
+offset_bottom = 650.0
+color = Color(0, 0, 0, 0.301961)
+metadata/_edit_lock_ = true
+
+[node name="ArrowSet" parent="." instance=ExtResource("3_65k0i")]
+position = Vector2(2, 198)
+metadata/_edit_lock_ = true
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(100, 335)
+scale = Vector2(3.23437, 3.67187)
+energy = 1.5
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_8n5y0")
+
+[node name="PointLight2D2" type="PointLight2D" parent="."]
+position = Vector2(994, 347)
+scale = Vector2(3.23437, 3.67187)
+energy = 1.5
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_8n5y0")
