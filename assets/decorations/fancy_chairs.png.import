@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0r6bprg7q7ev"
-path="res://.godot/imported/temp_background.png-6848979cd30af8f193dbc3cc612b1f04.ctex"
+uid="uid://frv7gpdj0qe4"
+path="res://.godot/imported/fancy_chairs.png-a99b4f2a88796cd5bef8561baeeb5038.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/temp/temp_background.png"
-dest_files=["res://.godot/imported/temp_background.png-6848979cd30af8f193dbc3cc612b1f04.ctex"]
+source_file="res://assets/decorations/fancy_chairs.png"
+dest_files=["res://.godot/imported/fancy_chairs.png-a99b4f2a88796cd5bef8561baeeb5038.ctex"]
 
 [params]
 

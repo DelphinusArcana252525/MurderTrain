@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wqvcbm72okl5"
-path="res://.godot/imported/Background.png-6d72d35f07f42b3845e8764c552bb4fb.ctex"
+uid="uid://dfsa0x2pmyoic"
+path="res://.godot/imported/engine.png-32b7843292e7855e04c5ab3b6c81f7d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Background.png"
-dest_files=["res://.godot/imported/Background.png-6d72d35f07f42b3845e8764c552bb4fb.ctex"]
+source_file="res://assets/train_cars/engine.png"
+dest_files=["res://.godot/imported/engine.png-32b7843292e7855e04c5ab3b6c81f7d8.ctex"]
 
 [params]
 
