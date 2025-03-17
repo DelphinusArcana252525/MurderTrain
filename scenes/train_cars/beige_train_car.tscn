@@ -85,8 +85,8 @@ occluder = SubResource("OccluderPolygon2D_tybre")
 [node name="TempLightsNode" type="Node2D" parent="TempStuffForLightsDemo"]
 
 [node name="PointLight2D" type="PointLight2D" parent="TempStuffForLightsDemo/TempLightsNode"]
-position = Vector2(-80.4473, -15.6137)
-scale = Vector2(3.23437, 3.67187)
+position = Vector2(-65.6148, -15.5971)
+scale = Vector2(1.55413, 1.76435)
 energy = 1.5
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_src5n")

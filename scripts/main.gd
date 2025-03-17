@@ -1,6 +1,7 @@
 extends Node2D
 
-@onready var inventory: Node2D = $Inventory
+@onready var inventory: Node2D = $Camera2D/Inventory
+
 
 # Temp code for testing
 func _input(_event: InputEvent) -> void:

@@ -1,12 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://byd0yup8koql0"]
+[gd_scene load_steps=4 format=3 uid="uid://byd0yup8koql0"]
 
 [ext_resource type="PackedScene" uid="uid://d08unfm1djku" path="res://scenes/train_cars/beige_train_car.tscn" id="1_natgr"]
-[ext_resource type="Script" path="res://scripts/train.gd" id="1_rnyo6"]
 [ext_resource type="PackedScene" uid="uid://dvdev0cihpcus" path="res://scenes/train_cars/passanger_train_car.tscn" id="2_da0vd"]
 [ext_resource type="PackedScene" uid="uid://cut8ufxccprv2" path="res://scenes/train_cars/brown_car.tscn" id="3_2e1ol"]
 
 [node name="Train" type="Node2D"]
-script = ExtResource("1_rnyo6")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 offset_right = 447.0

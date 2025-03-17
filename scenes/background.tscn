@@ -1,0 +1,105 @@
+[gd_scene load_steps=10 format=3 uid="uid://d37efhh7cef6l"]
+
+[ext_resource type="Script" path="res://scripts/background.gd" id="1_br2su"]
+[ext_resource type="Texture2D" uid="uid://bi0atlpe80mgc" path="res://assets/background_layers/Layer_0009_2.png" id="2_grv4v"]
+[ext_resource type="Texture2D" uid="uid://cun76dvq0ob3f" path="res://assets/background_layers/Layer_0008_3.png" id="3_4x7k6"]
+[ext_resource type="Texture2D" uid="uid://b2d2bht8h1sso" path="res://assets/background_layers/Layer_0006_4.png" id="4_xdy50"]
+[ext_resource type="Texture2D" uid="uid://drpg0hrbnkpk8" path="res://assets/background_layers/Layer_0005_5.png" id="5_pjdfe"]
+[ext_resource type="Texture2D" uid="uid://dbk54uci0d4xn" path="res://assets/background_layers/Layer_0003_6.png" id="6_vcjy5"]
+[ext_resource type="Texture2D" uid="uid://j1y460r6m62n" path="res://assets/background_layers/Layer_0002_7.png" id="7_u7gjb"]
+[ext_resource type="Texture2D" uid="uid://tv3r8er8y0wj" path="res://assets/background_layers/Layer_0001_8.png" id="8_dak80"]
+[ext_resource type="Texture2D" uid="uid://dc1taxhw2aayx" path="res://assets/background_layers/Layer_0000_9.png" id="9_ktcnc"]
+
+[node name="Background" type="ParallaxBackground"]
+script = ExtResource("1_br2su")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+position = Vector2(0, 34.75)
+scale = Vector2(1, 1.2)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(576, 34.75)
+scale = Vector2(1.24138, 1.2)
+texture = ExtResource("2_grv4v")
+region_rect = Rect2(16, 0, 175.505, 787)
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+position = Vector2(0, 34.75)
+scale = Vector2(1, 1.2)
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(576, 34.75)
+scale = Vector2(1.24138, 1.2)
+texture = ExtResource("3_4x7k6")
+region_rect = Rect2(16, 0, 175.505, 787)
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+position = Vector2(0, 34.75)
+scale = Vector2(1, 1.2)
+motion_scale = Vector2(0.4, 0.4)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(576, 34.75)
+scale = Vector2(1.24138, 1.2)
+texture = ExtResource("4_xdy50")
+region_rect = Rect2(16, 0, 175.505, 787)
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+position = Vector2(0, 34.75)
+scale = Vector2(1, 1.2)
+motion_scale = Vector2(0.7, 0.7)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(576, 34.75)
+scale = Vector2(1.24138, 1.2)
+texture = ExtResource("5_pjdfe")
+region_rect = Rect2(16, 0, 175.505, 787)
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="."]
+position = Vector2(0, 34.75)
+scale = Vector2(1, 1.2)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer5"]
+position = Vector2(576, 34.75)
+scale = Vector2(1.24138, 1.2)
+texture = ExtResource("6_vcjy5")
+region_rect = Rect2(16, 0, 175.505, 787)
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="."]
+position = Vector2(0, 34.75)
+scale = Vector2(1, 1.2)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer6"]
+position = Vector2(576, 34.75)
+scale = Vector2(1.24138, 1.2)
+texture = ExtResource("7_u7gjb")
+region_rect = Rect2(16, 0, 175.505, 787)
+
+[node name="ParallaxLayer7" type="ParallaxLayer" parent="."]
+position = Vector2(0, 34.75)
+scale = Vector2(1, 1.2)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer7"]
+position = Vector2(576, 34.75)
+scale = Vector2(1.24138, 1.2)
+texture = ExtResource("8_dak80")
+region_rect = Rect2(16, 0, 175.505, 787)
+
+[node name="ParallaxLayer8" type="ParallaxLayer" parent="."]
+position = Vector2(0, 34.75)
+scale = Vector2(1, 1.2)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer8"]
+position = Vector2(576, 34.75)
+scale = Vector2(1.24138, 1.2)
+texture = ExtResource("9_ktcnc")
+region_rect = Rect2(16, 0, 175.505, 787)
