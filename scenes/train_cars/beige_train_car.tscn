@@ -1,10 +1,92 @@
-[gd_scene load_steps=2 format=3 uid="uid://d08unfm1djku"]
+[gd_scene load_steps=10 format=3 uid="uid://d08unfm1djku"]
 
-[ext_resource type="Texture2D" uid="uid://cicipjhapwyjo" path="res://assets/beige_train_car.png" id="1_ahms6"]
+[ext_resource type="Texture2D" uid="uid://cicipjhapwyjo" path="res://assets/train_cars/beige_train_car.png" id="1_ahms6"]
+[ext_resource type="Texture2D" uid="uid://frv7gpdj0qe4" path="res://assets/decorations/fancy_chairs.png" id="2_w6e3o"]
+[ext_resource type="Texture2D" uid="uid://cllb4p2ivpy32" path="res://assets/decorations/chair_white_8x15.png" id="3_kslnc"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_tna14"]
+polygon = PackedVector2Array(-113, -61, -108, -61, -108, -24, -113, -24)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_rabnd"]
+polygon = PackedVector2Array(-112, -19, -112, -24, 112, -24, 112, -19)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_27iqk"]
+polygon = PackedVector2Array(-2.50372, 6.98962, -2.06367, 6.94179, -2.18182, 1.63636, -2.18182, 1.09091, 1.63636, 1.09091, 1.50462, 7.02789, 2.20296, 6.70263, 2.18182, 0.545455, -2.72727, 0.545455, -2.55269, -7.98209, -2.9178, 1.15217, -2.72727, 1.63636)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_tybre"]
+polygon = PackedVector2Array(-2.45454, -7.22727, -2.45454, -7.22727, -2.45454, 0.954545, 2.45454, 0.954545, 2.45454, 7.5, 2.09008, 1.34292, -2.30529, 1.24675, -2.45454, 7.5)
+
+[sub_resource type="Gradient" id="Gradient_upoxk"]
+offsets = PackedFloat32Array(0, 0.753247)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_src5n"]
+gradient = SubResource("Gradient_upoxk")
+fill = 1
+fill_from = Vector2(0.522936, 0.490826)
 
 [node name="BeigeTrainCar" type="PanelContainer"]
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="TrainCarShadowBox" type="Node" parent="."]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
 texture = ExtResource("1_ahms6")
+
+[node name="TrainCarLightOccluders" type="Node2D" parent="Node2D"]
+
+[node name="LeftLightOccluder2D" type="LightOccluder2D" parent="Node2D/TrainCarLightOccluders"]
+position = Vector2(1, 42)
+occluder = SubResource("OccluderPolygon2D_tna14")
+
+[node name="RightLightOccluder2D" type="LightOccluder2D" parent="Node2D/TrainCarLightOccluders"]
+position = Vector2(220, 42)
+occluder = SubResource("OccluderPolygon2D_tna14")
+
+[node name="TopLightOccluder2D" type="LightOccluder2D" parent="Node2D/TrainCarLightOccluders"]
+occluder = SubResource("OccluderPolygon2D_rabnd")
+
+[node name="BottomLightOccluder2D" type="LightOccluder2D" parent="Node2D/TrainCarLightOccluders"]
+position = Vector2(0, 42)
+occluder = SubResource("OccluderPolygon2D_rabnd")
+
+[node name="TempStuffForLightsDemo" type="Node2D" parent="."]
+
+[node name="TempChairNode" type="Node2D" parent="TempStuffForLightsDemo"]
+position = Vector2(-47, 4)
+scale = Vector2(0.164157, 0.164157)
+metadata/_edit_group_ = true
+
+[node name="FancyChairs" type="Sprite2D" parent="TempStuffForLightsDemo/TempChairNode"]
+position = Vector2(0, 1)
+rotation = -6.28319
+texture = ExtResource("2_w6e3o")
+region_enabled = true
+region_rect = Rect2(214, 8, 79, 187)
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="TempStuffForLightsDemo/TempChairNode/FancyChairs"]
+position = Vector2(6.09174, 6.09174)
+scale = Vector2(11.1682, 11.1682)
+occluder = SubResource("OccluderPolygon2D_27iqk")
+
+[node name="ChairWhite8x15" type="Sprite2D" parent="TempStuffForLightsDemo/TempChairNode"]
+position = Vector2(-130.972, 1.52293)
+scale = Vector2(11.1682, 11.1682)
+texture = ExtResource("3_kslnc")
+region_enabled = true
+region_rect = Rect2(32, 0, 6, 15)
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="TempStuffForLightsDemo/TempChairNode/ChairWhite8x15"]
+occluder = SubResource("OccluderPolygon2D_tybre")
+
+[node name="TempLightsNode" type="Node2D" parent="TempStuffForLightsDemo"]
+
+[node name="PointLight2D" type="PointLight2D" parent="TempStuffForLightsDemo/TempLightsNode"]
+position = Vector2(-65.6148, -15.5971)
+scale = Vector2(1.55413, 1.76435)
+energy = 1.5
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_src5n")

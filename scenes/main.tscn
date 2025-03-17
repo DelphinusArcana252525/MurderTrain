@@ -1,20 +1,52 @@
-[gd_scene load_steps=4 format=3 uid="uid://dtq0bgudccr58"]
+[gd_scene load_steps=7 format=3 uid="uid://dtq0bgudccr58"]
 
-[ext_resource type="Texture2D" uid="uid://c0r6bprg7q7ev" path="res://assets/temp_background.png" id="1_va7o6"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_qqq60"]
+[ext_resource type="PackedScene" uid="uid://d37efhh7cef6l" path="res://scenes/background.tscn" id="2_avuoc"]
 [ext_resource type="PackedScene" uid="uid://dkrmtom5u3jm0" path="res://scenes/arrow_set.tscn" id="3_65k0i"]
+[ext_resource type="PackedScene" uid="uid://ck156cwubslk7" path="res://scenes/inventory.tscn" id="4_icton"]
 [ext_resource type="PackedScene" uid="uid://byd0yup8koql0" path="res://scenes/train.tscn" id="4_k3nma"]
+[ext_resource type="Script" path="res://scripts/camera_2d.gd" id="7_b0w5v"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_qqq60")
 
-[node name="TempBackground" type="Sprite2D" parent="."]
-position = Vector2(640, 264)
-scale = Vector2(3, 3)
-texture = ExtResource("1_va7o6")
-region_rect = Rect2(80.5325, 0, 110.973, 31.5766)
-
-[node name="ArrowSet" parent="." instance=ExtResource("3_65k0i")]
-position = Vector2(0, 240)
+[node name="Background" parent="." instance=ExtResource("2_avuoc")]
 
 [node name="Train" parent="." instance=ExtResource("4_k3nma")]
-position = Vector2(576, 464)
+position = Vector2(575, 415)
 scale = Vector2(4.5, 4.5)
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+script = ExtResource("7_b0w5v")
+
+[node name="ForgegroundTint" type="ColorRect" parent="Camera2D"]
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 326.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.443137)
+metadata/_edit_lock_ = true
+
+[node name="BackgroundTint" type="ColorRect" parent="Camera2D"]
+visible = false
+z_index = -1
+offset_left = -576.0
+offset_top = -326.0
+offset_right = 576.0
+offset_bottom = 324.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.00784314)
+metadata/_edit_lock_ = true
+
+[node name="Inventory" parent="Camera2D" instance=ExtResource("4_icton")]
+z_index = -1
+position = Vector2(-410, -324)
+scale = Vector2(1.25, 1.25)
+metadata/_edit_lock_ = true
+
+[node name="ArrowSet" parent="Camera2D" instance=ExtResource("3_65k0i")]
+position = Vector2(-574, -126)
+metadata/_edit_lock_ = true

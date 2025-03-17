@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dosesq3l11ug"]
+
+[ext_resource type="Texture2D" uid="uid://ba8rnt6bp87ls" path="res://assets/temp/tempItemAssets/item_1.png" id="1_humug"]
+
+[node name="Item1" type="Panel"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("1_humug")
