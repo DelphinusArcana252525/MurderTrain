@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/character.gd" id="1_20ugd"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="2_gww64"]
-[ext_resource type="Resource" uid="uid://x4gijbt81emy" path="res://GreenMask.tres" id="3_73d8y"]
+[ext_resource type="Resource" uid="uid://x4gijbt81emy" path="res://Dialogue/GreenMask.tres" id="3_73d8y"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="4_hhm68"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="5_fr242"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeMatrix.gd" id="6_1ay07"]
@@ -47,7 +47,7 @@ visible = false
 layout_mode = 0
 offset_left = 20.0
 offset_top = 20.0
-offset_right = 120.0
+offset_right = 220.0
 offset_bottom = 120.0
 script = ExtResource("2_gww64")
 data = ExtResource("3_73d8y")
