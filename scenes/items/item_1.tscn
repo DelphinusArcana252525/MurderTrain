@@ -1,11 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://dosesq3l11ug"]
+[gd_scene load_steps=3 format=3 uid="uid://csgthsldowypl"]
 
-[ext_resource type="Texture2D" uid="uid://ba8rnt6bp87ls" path="res://assets/temp/tempItemAssets/item_1.png" id="1_humug"]
+[ext_resource type="PackedScene" uid="uid://d4mb1uorlpov7" path="res://scenes/item_base.tscn" id="1_v4axl"]
+[ext_resource type="Texture2D" uid="uid://ba8rnt6bp87ls" path="res://assets/temp/tempItemAssets/item_1.png" id="2_v066f"]
 
-[node name="Item1" type="Panel"]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Item1" instance=ExtResource("1_v4axl")]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(3, 3)
-texture = ExtResource("1_humug")
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_v066f")
+
+[node name="ItemInfoBox" parent="." index="1"]
+text = "this is a cool scroll"
