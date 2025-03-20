@@ -1,0 +1,345 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://bawbs6kdy6gty"]
+
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_lpymh"]
+
+[resource]
+script = ExtResource("1_lpymh")
+starts = {
+"Start": &"0_1"
+}
+nodes = {
+"0_1": {
+"link": &"1_1",
+"offset": Vector2(-540, -240),
+"start_id": "Start"
+},
+"0_2": {
+"link": "END",
+"offset": Vector2(320, -660),
+"start_id": ""
+},
+"1_1": {
+"dialogue": "Hello, detective. I’m truly shocked about the murder, especially at this party. Is there anything I can help with?",
+"offset": Vector2(-260, -320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": "Tell me about yourself."
+},
+1: {
+"condition": {},
+"link": &"1_3",
+"text": "What do you know about..."
+}
+},
+"size": Vector2(300, 256),
+"speaker": "Pamlet Hemmingsworth"
+},
+"1_10": {
+"dialogue": "It was actually a pretty tough call. Both of them would have been great, but Joi had the better audition. ",
+"offset": Vector2(1460, -540),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Pamelt Hemmingsworth"
+},
+"1_11": {
+"dialogue": "Joi Launda, who is…oh, right. Yeah. 
+",
+"offset": Vector2(1460, -240),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Pamlet Hemmingsworth"
+},
+"1_12": {
+"dialogue": "No, she took it well. Her sister got kind of annoyed on her behalf, but Anwar was fine with it. ",
+"offset": Vector2(1460, 60),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Pamlet Hemmingsworth"
+},
+"1_13": {
+"dialogue": "Something something",
+"offset": Vector2(1080, -700),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Pamlet Hemmingsworth"
+},
+"1_14": {
+"dialogue": "Yeah, Anwar…wait, you didn’t say Anwar. Oh year, Inoue’s her sister. She came to the audition. They seemed close. Actually, come to think of it, she got more angry than Anwar about the casting.",
+"offset": Vector2(1040, 280),
+"options": {
+0: {
+"condition": {},
+"link": &"1_16",
+"text": "What audition?"
+},
+1: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 256),
+"speaker": "Pamlet Hemmingsworth"
+},
+"1_15": {
+"dialogue": "Unfinished Titanic III info",
+"offset": Vector2(1100, 920),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Pamlet Hemmingsworth"
+},
+"1_16": {
+"dialogue": "Why, the audition for Silent Witness, of course! Anwar and Joi were competing for the main role, and we gave it to Joi. It was a close call, though. ",
+"offset": Vector2(1480, 420),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Pamlet Hemmingsworth"
+},
+"1_17": {
+"dialogue": "Oh yeah, Chiri is a director and producer, like me. They make good stuff. Right now, I think they’re working on another Titanic sequel, which is an interesting choice, but I trust they know what they’re talking about.",
+"offset": Vector2(1020, 580),
+"options": {
+0: {
+"condition": {},
+"link": &"1_15",
+"text": "Tell me about Titanic III"
+},
+1: {
+"condition": {},
+"link": &"1_18",
+"text": "Have you two had any professional disputes?"
+}
+},
+"size": Vector2(300, 260),
+"speaker": "Pamlet Hemmingsworth"
+},
+"1_18": {
+"dialogue": "Yeah, they made a movie a while back that won an oscar category I was going for. But I did the same to them a few years later, so I think we’re even. ",
+"offset": Vector2(1467.83, 728.367),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Pamlet Hemmingsworth"
+},
+"1_19": {
+"dialogue": "Unfinished Silent Witness info",
+"offset": Vector2(909.574, 957.676),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Pamlet Hemmingsworth"
+},
+"1_2": {
+"dialogue": "Okay! I’ve been in the film industry for… oh, it’s been two decades now. I directed and produced Silent Witness, and I’m really excited about how well it’s doing. I never got very close to Joi, but they were great on set, and I can tell you more about them if you want.",
+"offset": Vector2(120, -460),
+"options": {
+0: {
+"condition": {},
+"link": &"1_5",
+"text": "Sure, that sounds helpful"
+},
+1: {
+"condition": {},
+"link": "END",
+"text": "Was there any drama on set"
+}
+},
+"size": Vector2(300, 256),
+"speaker": "Pamlet Hemmingsworth"
+},
+"1_3": {
+"dialogue": ".",
+"offset": Vector2(40, 180),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": "Actors"
+},
+1: {
+"condition": {},
+"link": &"1_5",
+"text": "Joi Launda"
+},
+2: {
+"condition": {},
+"link": &"1_6",
+"text": "Other Characters"
+},
+3: {
+"condition": {},
+"link": &"1_7",
+"text": "Movies"
+}
+},
+"size": Vector2(300, 289),
+"speaker": "Select"
+},
+"1_4": {
+"dialogue": ".",
+"offset": Vector2(600, -300),
+"options": {
+0: {
+"condition": {},
+"link": &"1_13",
+"text": "Jennifer Soum"
+},
+1: {
+"condition": {},
+"link": &"1_9",
+"text": "Anwar Isai"
+},
+2: {
+"condition": {},
+"link": &"1_8",
+"text": "Loni Johnson"
+}
+},
+"size": Vector2(380, 289),
+"speaker": "Select a character"
+},
+"1_5": {
+"dialogue": "Unfinished Joi Launda info",
+"offset": Vector2(600, 40),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you!"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Pamlet Hemmingsworth"
+},
+"1_6": {
+"dialogue": ".",
+"offset": Vector2(600, 320),
+"options": {
+0: {
+"condition": {},
+"link": &"1_14",
+"text": "Inoue Isai"
+},
+1: {
+"condition": {},
+"link": &"1_17",
+"text": "Chiri de Pomme"
+}
+},
+"size": Vector2(300, 256),
+"speaker": "Select a character"
+},
+"1_7": {
+"dialogue": ".",
+"offset": Vector2(600, 640),
+"options": {
+0: {
+"condition": {},
+"link": &"1_15",
+"text": "Titanic III"
+},
+1: {
+"condition": {},
+"link": &"1_19",
+"text": "The Silent Witness"
+}
+},
+"size": Vector2(300, 256),
+"speaker": "Select a movie"
+},
+"1_8": {
+"dialogue": "I worked with her maybe five years ago. She’s a great actress, but she wasn’t very friendly with the others on set. I think she’s auditioning for Titanic III?",
+"offset": Vector2(1100, -60),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Pamlet Hemmingsworth"
+},
+"1_9": {
+"dialogue": "Yeah, Anwar’s a good actress. I worked with her when she was finding her footing, she played a minor role in one of my films. Actually, she auditioned for Silent Witness, but we didn’t end up giving her the role.",
+"offset": Vector2(1100, -400),
+"options": {
+0: {
+"condition": {},
+"link": &"1_10",
+"text": "Why not?"
+},
+1: {
+"condition": {},
+"link": &"1_11",
+"text": "Who did you give it to instead?"
+},
+2: {
+"condition": {},
+"link": &"1_12",
+"text": "Was she mad?"
+}
+},
+"size": Vector2(300, 289),
+"speaker": "Pamlet Hemmingsworth"
+},
+"5_1": {
+"false": "END",
+"offset": Vector2(129.603, 692.853),
+"operator": 0,
+"true": "END",
+"value1": "",
+"value2": ""
+}
+}
+variables = {}
+strays = Array[String](["0_2", "5_1"])
+characters = ""

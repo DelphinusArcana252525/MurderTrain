@@ -1,14 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://dd06y6yukgv6n"]
+[gd_scene load_steps=10 format=3 uid="uid://dd06y6yukgv6n"]
 
 [ext_resource type="Script" path="res://scripts/character.gd" id="1_20ugd"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="2_gww64"]
-[ext_resource type="Resource" uid="uid://x4gijbt81emy" path="res://Dialogue/GreenMask.tres" id="3_73d8y"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="4_hhm68"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="5_fr242"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeMatrix.gd" id="6_1ay07"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2wbmn"]
-size = Vector2(32, 32)
+size = Vector2(96, 118.172)
 
 [sub_resource type="RichTextEffect" id="RichTextEffect_kt3jd"]
 script = ExtResource("4_hhm68")
@@ -23,6 +22,7 @@ script = ExtResource("6_1ay07")
 script = ExtResource("1_20ugd")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 offset_left = -16.0
 offset_top = -16.0
 offset_right = 16.0
@@ -32,6 +32,8 @@ mouse_filter = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 z_index = 1
 shape = SubResource("RectangleShape2D_2wbmn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -47,10 +49,9 @@ visible = false
 layout_mode = 0
 offset_left = 20.0
 offset_top = 20.0
-offset_right = 220.0
-offset_bottom = 120.0
+offset_right = 520.0
+offset_bottom = 320.0
 script = ExtResource("2_gww64")
-data = ExtResource("3_73d8y")
 custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_kt3jd"), SubResource("RichTextEffect_o1hwu"), SubResource("RichTextEffect_hvb7j")])
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]

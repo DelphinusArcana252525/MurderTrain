@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://j4id8px05fs6"]
+
+[ext_resource type="Script" path="res://who_dunnit.gd" id="1_esrdx"]
+[ext_resource type="PackedScene" uid="uid://8b5lpikqv30v" path="res://who_dunnit_char.tscn" id="1_us0px"]
+[ext_resource type="Texture2D" uid="uid://cummx5jj1p6bw" path="res://assets/Pamlet_Hemmingsworth.png" id="2_pch3g"]
+
+[node name="WhoDunnit" type="Node2D"]
+script = ExtResource("1_esrdx")
+
+[node name="PamletHemmingsworth" parent="." instance=ExtResource("1_us0px")]
+position = Vector2(80, 408)
+sprite = ExtResource("2_pch3g")
+
+[connection signal="clicked" from="PamletHemmingsworth" to="." method="_on_pamlet_hemmingsworth_clicked"]
