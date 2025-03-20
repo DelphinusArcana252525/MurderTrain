@@ -19,7 +19,7 @@ texture = ExtResource("1_vvt0i")
 [node name="ItemInfoBox" parent="." instance=ExtResource("3_smqun")]
 visible = false
 z_index = -1
-position = Vector2(36, 174)
+position = Vector2(30, 174)
 text = "klahfdoihdonfodn"
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
