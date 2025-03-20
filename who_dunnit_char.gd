@@ -2,9 +2,11 @@ extends Area2D
 
 signal clicked
 @export var sprite: Texture2D
+@export var text: String
 
 func _ready() -> void:
 	$'Sprite2D'.texture = sprite
+	$Label.text = text
 
 #The following gotten from here: https://www.reddit.com/r/godot/comments/7xwr22/guide_how_to_click_a_sprite/
 func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
@@ -13,4 +15,3 @@ func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> voi
 
 func on_click():
 	clicked.emit()
-	print("hi")

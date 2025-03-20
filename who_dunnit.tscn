@@ -1,14 +1,60 @@
-[gd_scene load_steps=4 format=3 uid="uid://j4id8px05fs6"]
+[gd_scene load_steps=9 format=3 uid="uid://j4id8px05fs6"]
 
 [ext_resource type="Script" path="res://who_dunnit.gd" id="1_esrdx"]
 [ext_resource type="PackedScene" uid="uid://8b5lpikqv30v" path="res://who_dunnit_char.tscn" id="1_us0px"]
 [ext_resource type="Texture2D" uid="uid://cummx5jj1p6bw" path="res://assets/Pamlet_Hemmingsworth.png" id="2_pch3g"]
+[ext_resource type="Texture2D" uid="uid://3ubbuxa44t6i" path="res://assets/Anwar_Isai.png" id="4_0644u"]
+[ext_resource type="Texture2D" uid="uid://cauxbgwh7orpb" path="res://assets/Inoue_Isai.png" id="5_pwlle"]
+[ext_resource type="Texture2D" uid="uid://bc5qxvj4cjajr" path="res://assets/Chiri_de_Pomme.png" id="6_4tvnq"]
+[ext_resource type="Texture2D" uid="uid://bfvtpi7vnxsjf" path="res://assets/Loni_Johnson.png" id="7_188xc"]
+[ext_resource type="Texture2D" uid="uid://bnbeywxhtaaw6" path="res://assets/Jennifer_Soum.png" id="8_lrml1"]
 
 [node name="WhoDunnit" type="Node2D"]
 script = ExtResource("1_esrdx")
 
-[node name="PamletHemmingsworth" parent="." instance=ExtResource("1_us0px")]
-position = Vector2(80, 408)
-sprite = ExtResource("2_pch3g")
+[node name="JenniferSoum" parent="." instance=ExtResource("1_us0px")]
+position = Vector2(104, 400)
+sprite = ExtResource("8_lrml1")
+text = "Jennifer Soum"
 
+[node name="ChiriDePomme" parent="." instance=ExtResource("1_us0px")]
+position = Vector2(304, 400)
+sprite = ExtResource("6_4tvnq")
+text = "Chiri de Pomme"
+
+[node name="LoniJohnson" parent="." instance=ExtResource("1_us0px")]
+position = Vector2(496, 400)
+sprite = ExtResource("7_188xc")
+text = "Loni Johnson"
+
+[node name="PamletHemmingsworth" parent="." instance=ExtResource("1_us0px")]
+position = Vector2(672, 400)
+sprite = ExtResource("2_pch3g")
+text = "Pamlet Hemmingsworth"
+
+[node name="AnwarIsai" parent="." instance=ExtResource("1_us0px")]
+position = Vector2(868, 400)
+sprite = ExtResource("4_0644u")
+text = "Anwar Isai"
+
+[node name="Inoue Isai" parent="." instance=ExtResource("1_us0px")]
+position = Vector2(1048, 400)
+sprite = ExtResource("5_pwlle")
+text = "Inoue Isai"
+
+[node name="EndScreen" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 160.0
+offset_right = 1030.0
+offset_bottom = 192.0
+theme_override_font_sizes/font_size = 140
+text = "Who Dunnit?"
+
+[connection signal="clicked" from="JenniferSoum" to="." method="_on_jennifer_soum_clicked"]
+[connection signal="clicked" from="ChiriDePomme" to="." method="_on_chiri_de_pomme_clicked"]
+[connection signal="clicked" from="LoniJohnson" to="." method="_on_loni_johnson_clicked"]
 [connection signal="clicked" from="PamletHemmingsworth" to="." method="_on_pamlet_hemmingsworth_clicked"]
+[connection signal="clicked" from="AnwarIsai" to="." method="_on_anwar_isai_clicked"]
+[connection signal="clicked" from="Inoue Isai" to="." method="_on_inoue_isai_clicked"]

@@ -18,3 +18,12 @@ script = SubResource("GDScript_alrbd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_8knbw")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -72.0
+offset_top = 144.0
+offset_right = 72.0
+offset_bottom = 167.0
+text = "Character Name"
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

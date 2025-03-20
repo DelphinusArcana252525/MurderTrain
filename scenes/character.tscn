@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" path="res://scripts/character.gd" id="1_20ugd"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="2_gww64"]
-[ext_resource type="Resource" uid="uid://x4gijbt81emy" path="res://GreenMask.tres" id="3_73d8y"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="4_hhm68"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="5_fr242"]
 [ext_resource type="Script" path="res://addons/dialogue_nodes/objects/bbcodeMatrix.gd" id="6_1ay07"]
