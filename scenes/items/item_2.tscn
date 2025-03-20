@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dacctxi1kvn5w"]
 
-[ext_resource type="PackedScene" uid="uid://d4mb1uorlpov7" path="res://scenes/item_base.tscn" id="1_a5jpo"]
+[ext_resource type="PackedScene" uid="uid://d4mb1uorlpov7" path="res://scenes/scene_bases/item_base.tscn" id="1_a5jpo"]
 [ext_resource type="Texture2D" uid="uid://dbm4pj1uklet7" path="res://assets/temp/tempItemAssets/item_2.png" id="2_ko4fv"]
 
 [node name="Item2" instance=ExtResource("1_a5jpo")]

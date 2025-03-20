@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dkrmtom5u3jm0"]
 
 [ext_resource type="Script" path="res://scripts/arrow_set.gd" id="1_ebrq2"]
-[ext_resource type="PackedScene" uid="uid://0v5otvh8f1rd" path="res://scenes/arrow.tscn" id="1_ugg40"]
+[ext_resource type="PackedScene" uid="uid://0v5otvh8f1rd" path="res://scenes/gui/arrow.tscn" id="1_ugg40"]
 
 [node name="ArrowSet" type="Node2D"]
 script = ExtResource("1_ebrq2")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5kn3v4wr4ett"
-path="res://.godot/imported/inventory.png-83bb5941227a7793a033e5afa13d270b.ctex"
+uid="uid://bfvtpi7vnxsjf"
+path="res://.godot/imported/Loni_Johnson.png-7ccb6779c62faa0eedadf499e4027187.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/inventory.png"
-dest_files=["res://.godot/imported/inventory.png-83bb5941227a7793a033e5afa13d270b.ctex"]
+source_file="res://assets/chacters/Loni_Johnson.png"
+dest_files=["res://.godot/imported/Loni_Johnson.png-7ccb6779c62faa0eedadf499e4027187.ctex"]
 
 [params]
 

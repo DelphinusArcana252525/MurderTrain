@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3ubbuxa44t6i"
-path="res://.godot/imported/Anwar_Isai.png-68766530c7cd9fac117b8e88b32bd672.ctex"
+uid="uid://ba12qpce4i71l"
+path="res://.godot/imported/clock.png-2fe2c120f7efd69014a4c061f28b0904.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Anwar_Isai.png"
-dest_files=["res://.godot/imported/Anwar_Isai.png-68766530c7cd9fac117b8e88b32bd672.ctex"]
+source_file="res://assets/gui/clock.png"
+dest_files=["res://.godot/imported/clock.png-2fe2c120f7efd69014a4c061f28b0904.ctex"]
 
 [params]
 

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/item.gd" id="1_5fxn6"]
 [ext_resource type="Texture2D" uid="uid://dw7vh331ja3r6" path="res://assets/temp/tempItemAssets/item_0.png" id="1_vvt0i"]
-[ext_resource type="PackedScene" uid="uid://b34dvwmtjkkpn" path="res://scenes/item_info_box.tscn" id="3_smqun"]
+[ext_resource type="PackedScene" uid="uid://b34dvwmtjkkpn" path="res://scenes/gui/item_info_box.tscn" id="3_smqun"]
 
 [node name="itemBase" type="Control"]
 layout_mode = 3

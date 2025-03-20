@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" path="res://who_dunnit.gd" id="1_esrdx"]
 [ext_resource type="PackedScene" uid="uid://8b5lpikqv30v" path="res://who_dunnit_char.tscn" id="1_us0px"]
-[ext_resource type="Texture2D" uid="uid://cummx5jj1p6bw" path="res://assets/Pamlet_Hemmingsworth.png" id="2_pch3g"]
-[ext_resource type="Texture2D" uid="uid://3ubbuxa44t6i" path="res://assets/Anwar_Isai.png" id="4_0644u"]
-[ext_resource type="Texture2D" uid="uid://cauxbgwh7orpb" path="res://assets/Inoue_Isai.png" id="5_pwlle"]
-[ext_resource type="Texture2D" uid="uid://bc5qxvj4cjajr" path="res://assets/Chiri_de_Pomme.png" id="6_4tvnq"]
-[ext_resource type="Texture2D" uid="uid://bfvtpi7vnxsjf" path="res://assets/Loni_Johnson.png" id="7_188xc"]
-[ext_resource type="Texture2D" uid="uid://bnbeywxhtaaw6" path="res://assets/Jennifer_Soum.png" id="8_lrml1"]
+[ext_resource type="Texture2D" uid="uid://cummx5jj1p6bw" path="res://assets/chacters/Pamlet_Hemmingsworth.png" id="2_pch3g"]
+[ext_resource type="Texture2D" uid="uid://3ubbuxa44t6i" path="res://assets/chacters/Anwar_Isai.png" id="4_0644u"]
+[ext_resource type="Texture2D" uid="uid://cauxbgwh7orpb" path="res://assets/chacters/Inoue_Isai.png" id="5_pwlle"]
+[ext_resource type="Texture2D" uid="uid://bc5qxvj4cjajr" path="res://assets/chacters/Chiri_de_Pomme.png" id="6_4tvnq"]
+[ext_resource type="Texture2D" uid="uid://bfvtpi7vnxsjf" path="res://assets/chacters/Loni_Johnson.png" id="7_188xc"]
+[ext_resource type="Texture2D" uid="uid://bnbeywxhtaaw6" path="res://assets/chacters/Jennifer_Soum.png" id="8_lrml1"]
 
 [node name="WhoDunnit" type="Node2D"]
 script = ExtResource("1_esrdx")

@@ -8,7 +8,7 @@ polygon = PackedVector2Array(-110, -66, -108, -66, -108, -24, -110, -24)
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_nhhou"]
 polygon = PackedVector2Array(-112, -19, -112, -24, 112, -24, 112, -19)
 
-[node name="PassangerTrainCar" type="PanelContainer"]
+[node name="PassangerCar" type="PanelContainer"]
 offset_right = 40.0
 offset_bottom = 40.0
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca5cf6g2jeove"
-path="res://.godot/imported/Joi_Launda.png-53c26a86246bf982d07f9fa6bc460454.ctex"
+uid="uid://bc5qxvj4cjajr"
+path="res://.godot/imported/Chiri_de_Pomme.png-85adbff3391b2fbd819239a000db09cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Joi_Launda.png"
-dest_files=["res://.godot/imported/Joi_Launda.png-53c26a86246bf982d07f9fa6bc460454.ctex"]
+source_file="res://assets/chacters/Chiri_de_Pomme.png"
+dest_files=["res://.godot/imported/Chiri_de_Pomme.png-85adbff3391b2fbd819239a000db09cb.ctex"]
 
 [params]
 

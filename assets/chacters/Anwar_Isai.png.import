@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmmluttwsy65b"
-path="res://.godot/imported/item_info_box.png-6cd0daae524235c076d83387dfa1f31b.ctex"
+uid="uid://3ubbuxa44t6i"
+path="res://.godot/imported/Anwar_Isai.png-29e77eb395ab0962f3f3a998b404a432.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/item_info_box.png"
-dest_files=["res://.godot/imported/item_info_box.png-6cd0daae524235c076d83387dfa1f31b.ctex"]
+source_file="res://assets/chacters/Anwar_Isai.png"
+dest_files=["res://.godot/imported/Anwar_Isai.png-29e77eb395ab0962f3f3a998b404a432.ctex"]
 
 [params]
 

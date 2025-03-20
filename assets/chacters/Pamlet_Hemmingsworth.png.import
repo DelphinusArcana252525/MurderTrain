@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ba12qpce4i71l"
-path="res://.godot/imported/clock.png-88b7e3c1d6bf3320ad0578ddb9831701.ctex"
+uid="uid://cummx5jj1p6bw"
+path="res://.godot/imported/Pamlet_Hemmingsworth.png-64fcd4a1cf42a9edea179f96c2425188.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/clock.png"
-dest_files=["res://.godot/imported/clock.png-88b7e3c1d6bf3320ad0578ddb9831701.ctex"]
+source_file="res://assets/chacters/Pamlet_Hemmingsworth.png"
+dest_files=["res://.godot/imported/Pamlet_Hemmingsworth.png-64fcd4a1cf42a9edea179f96c2425188.ctex"]
 
 [params]
 

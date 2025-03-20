@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfvtpi7vnxsjf"
-path="res://.godot/imported/Loni_Johnson.png-93e68e6cfd43654a91ff5800630b75d6.ctex"
+uid="uid://h456pu5mjlfi"
+path="res://.godot/imported/clock_hand.png-aa2a16cf304cb6dc7a2b7d3fc761c9bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Loni_Johnson.png"
-dest_files=["res://.godot/imported/Loni_Johnson.png-93e68e6cfd43654a91ff5800630b75d6.ctex"]
+source_file="res://assets/gui/clock_hand.png"
+dest_files=["res://.godot/imported/clock_hand.png-aa2a16cf304cb6dc7a2b7d3fc761c9bb.ctex"]
 
 [params]
 

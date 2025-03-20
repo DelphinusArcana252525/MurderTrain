@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://d12psxu0mst2f"]
+
+[ext_resource type="PackedScene" uid="uid://dvdev0cihpcus" path="res://scenes/scene_bases/passanger_car.tscn" id="1_f6y3y"]
+
+[node name="PassangerCar1" instance=ExtResource("1_f6y3y")]
