@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://ck156cwubslk7"]
+[gd_scene load_steps=4 format=3 uid="uid://ck156cwubslk7"]
 
 [ext_resource type="Texture2D" uid="uid://5kn3v4wr4ett" path="res://assets/inventory.png" id="1_4r1u5"]
 [ext_resource type="Script" path="res://scripts/inventory.gd" id="1_h7ika"]
+[ext_resource type="PackedScene" uid="uid://cd6gpfyla8vi8" path="res://scenes/new_item_text.tscn" id="3_yx7oi"]
 
 [node name="Inventory" type="Node2D"]
 script = ExtResource("1_h7ika")
@@ -13,9 +14,17 @@ region_enabled = true
 region_rect = Rect2(103, 426, 632, 84)
 
 [node name="GridContainer" type="GridContainer" parent="."]
-offset_left = 46.0
-offset_top = 40.0
-offset_right = 97.0
-offset_bottom = 92.0
+offset_left = 23.0
+offset_top = 16.0
+offset_right = 74.0
+offset_bottom = 68.0
 theme_override_constants/h_separation = 60
 columns = 10
+
+[node name="NewItemText" parent="." instance=ExtResource("3_yx7oi")]
+visible = false
+z_index = -3
+offset_left = 197.0
+offset_top = 95.0
+offset_right = 432.0
+offset_bottom = 206.0

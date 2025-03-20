@@ -1,11 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://cskvcjjv7avmo"]
 
-[ext_resource type="Texture2D" uid="uid://dw7vh331ja3r6" path="res://assets/temp/tempItemAssets/item_0.png" id="1_tnii6"]
+[ext_resource type="PackedScene" uid="uid://d4mb1uorlpov7" path="res://scenes/item_base.tscn" id="1_8epjw"]
 
-[node name="Item0" type="Panel"]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Item0" instance=ExtResource("1_8epjw")]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(3, 3)
-texture = ExtResource("1_tnii6")
+[node name="ItemInfoBox" parent="." index="1"]
+text = "blah blah cool sword"
