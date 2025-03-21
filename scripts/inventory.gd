@@ -1,6 +1,6 @@
 extends Node2D
 
-const FILE_PATH : String = 'res://scenes/items/item_%s.tscn'
+const FILE_PATH : String = 'res://scenes/items/%s_item.tscn'
 const MAX_ITEMS : int = 10
 
 @onready var grid_container: GridContainer = $GridContainer

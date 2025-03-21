@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cs1fr851vji8e"]
+
+[ext_resource type="PackedScene" uid="uid://d4mb1uorlpov7" path="res://scenes/scene_bases/item_base.tscn" id="1_01jw2"]
+[ext_resource type="Texture2D" uid="uid://d0cgeagdh6kyv" path="res://assets/items/bag.png" id="2_skl55"]
+
+[node name="BagItem" instance=ExtResource("1_01jw2")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_skl55")
+
+[node name="ItemInfoBox" parent="." index="1"]
+text = "It's a green handbag. It has a wallet, keys, and peanut butter. Whose could it be?"
