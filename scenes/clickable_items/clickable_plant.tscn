@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8e8a05agr1om"]
+
+[ext_resource type="PackedScene" uid="uid://tol528cdumwp" path="res://scenes/scene_bases/clickable_item_base.tscn" id="1_804ga"]
+[ext_resource type="Texture2D" uid="uid://cj1woc3dqw5va" path="res://assets/items/plant.png" id="2_qqgg3"]
+
+[node name="ClickablePlant" instance=ExtResource("1_804ga")]
+item_name = "plant"
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_qqgg3")

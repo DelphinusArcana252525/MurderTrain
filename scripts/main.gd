@@ -6,7 +6,8 @@ var items : Array = ["bag", "key", "knife", "poster_0", "poster_1", "plant"]
 
 # Temp code for testing
 func _input(_event: InputEvent) -> void:
-	if Input.is_action_just_released("ui_accept"):
-		inventory.add_item(items[randi_range(0, 5)])
 	if Input.is_action_just_pressed("restart"):
 		get_tree().reload_current_scene()
+
+func add_item(item : String):
+	inventory.add_item(item)

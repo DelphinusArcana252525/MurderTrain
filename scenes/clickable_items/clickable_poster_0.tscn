@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8cktdum5wi18"]
+
+[ext_resource type="PackedScene" uid="uid://tol528cdumwp" path="res://scenes/scene_bases/clickable_item_base.tscn" id="1_ebewm"]
+[ext_resource type="Texture2D" uid="uid://b7g2omni78gpn" path="res://assets/items/poster_0.png" id="2_8wcs0"]
+
+[node name="ClickablePoster0" instance=ExtResource("1_ebewm")]
+item_name = "poster_0"
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_8wcs0")
