@@ -9,4 +9,5 @@
 texture = ExtResource("2_txbc1")
 
 [node name="ItemInfoBox" parent="." index="1"]
-text = "It's coated in BLOOD. Joi Launda's BLOOD. After further examination you aren’t able to notice any fingerprints."
+nameVar = "Knife"
+descriptionVar = "It's coated in BLOOD. Joi Launda's BLOOD. After further examination you aren’t able to notice any fingerprints."

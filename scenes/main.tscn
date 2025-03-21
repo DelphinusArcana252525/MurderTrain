@@ -21,8 +21,8 @@ metadata/_edit_lock_ = true
 position = Vector2(576, 324)
 script = ExtResource("7_b0w5v")
 
-[node name="ForgegroundTint" type="ColorRect" parent="Camera2D"]
-z_index = 3
+[node name="BackgroundTint" type="ColorRect" parent="Camera2D"]
+z_index = -4
 offset_left = -576.0
 offset_top = -324.0
 offset_right = 576.0
@@ -32,11 +32,12 @@ color = Color(0, 0, 0, 0.443137)
 metadata/_edit_lock_ = true
 
 [node name="Inventory" parent="Camera2D" instance=ExtResource("4_icton")]
-z_index = 2
+z_index = 3
 position = Vector2(-410, -324)
 scale = Vector2(1.25, 1.25)
 metadata/_edit_lock_ = true
 
 [node name="ArrowSet" parent="Camera2D" instance=ExtResource("3_65k0i")]
+z_index = 3
 position = Vector2(-574, -126)
 metadata/_edit_lock_ = true

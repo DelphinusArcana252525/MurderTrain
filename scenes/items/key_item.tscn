@@ -9,4 +9,5 @@
 texture = ExtResource("2_06gku")
 
 [node name="ItemInfoBox" parent="." index="1"]
-text = "A rusted key that has “storage car” engraved on it."
+nameVar = "Key"
+descriptionVar = "A rusted key that has “storage car” engraved on it."

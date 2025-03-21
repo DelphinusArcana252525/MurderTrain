@@ -9,4 +9,5 @@
 texture = ExtResource("2_skl55")
 
 [node name="ItemInfoBox" parent="." index="1"]
-text = "It's a green handbag. It has a wallet, keys, and peanut butter. Whose could it be?"
+nameVar = "Handbag"
+descriptionVar = "It's a green handbag. It has a wallet, keys, and peanut butter. Whose could it be?"

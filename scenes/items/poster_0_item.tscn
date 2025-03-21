@@ -9,4 +9,5 @@
 texture = ExtResource("2_nod2s")
 
 [node name="ItemInfoBox" parent="." index="1"]
-text = "“Chiri de Pomme’s breakthrough hit!”“Casting to be released soon!”“Debuting early 2026!”"
+nameVar = "Silent Witness Poster"
+descriptionVar = "A dramatic story of adventure and intrigue, starring Joi Launda as Rive Igardé. Directed and produced by the illustrious Pamlet Hemmingsworth."

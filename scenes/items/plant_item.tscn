@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d25aqy82i4l5u"]
+
+[ext_resource type="PackedScene" uid="uid://d4mb1uorlpov7" path="res://scenes/scene_bases/item_base.tscn" id="1_sldco"]
+[ext_resource type="Texture2D" uid="uid://cj1woc3dqw5va" path="res://assets/items/plant.png" id="2_0ee5t"]
+
+[node name="PlantItem" instance=ExtResource("1_sldco")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_0ee5t")
+
+[node name="ItemInfoBox" parent="." index="1"]
+nameVar = "Plant"
+descriptionVar = "You clicked on the one interactable plant! Congratulations, there's nothing interesting here."
