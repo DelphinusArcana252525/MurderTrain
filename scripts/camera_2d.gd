@@ -5,6 +5,7 @@ const SCALE : float = 4.5
 const OFFSET : int = 576
 const START_CAR : int = 2
 
+
 var train_cars : Array
 var current_car : int
 var tween : Tween

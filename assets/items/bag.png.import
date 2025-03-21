@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwbnkm4ob8git"
-path="res://.godot/imported/temp_arrow.png-086dd22c7126f6f447d14433f35731ec.ctex"
+uid="uid://d0cgeagdh6kyv"
+path="res://.godot/imported/bag.png-6aa0b71c6a9cf3568e330f3f749d7a99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/temp/temp_arrow.png"
-dest_files=["res://.godot/imported/temp_arrow.png-086dd22c7126f6f447d14433f35731ec.ctex"]
+source_file="res://assets/items/bag.png"
+dest_files=["res://.godot/imported/bag.png-6aa0b71c6a9cf3568e330f3f749d7a99.ctex"]
 
 [params]
 
