@@ -7,7 +7,7 @@
 [node name="PassangerCar2" instance=ExtResource("1_5d4m0")]
 
 [node name="ClickablePlant" parent="." index="2" instance=ExtResource("2_1mfi0")]
-position = Vector2(-13, 13)
+position = Vector2(32, 13)
 
 [node name="ClickableBag" parent="." index="3" instance=ExtResource("3_juwb3")]
-position = Vector2(15, 13)
+position = Vector2(72, 13)

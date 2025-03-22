@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cx8a4a6eq2x6e"]
+
+[ext_resource type="PackedScene" uid="uid://dd06y6yukgv6n" path="res://scenes/character.tscn" id="1_1ivax"]
+[ext_resource type="Texture2D" uid="uid://bc5qxvj4cjajr" path="res://assets/chacters/Chiri_de_Pomme.png" id="2_gtcup"]
+[ext_resource type="Resource" uid="uid://drpp44uolgbvg" path="res://dialogue/Chiri_de_Pomme.tres" id="3_recdk"]
+
+[node name="Chiri_de_Pomme" instance=ExtResource("1_1ivax")]
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-0.75, 1.24136)
+
+[node name="Sprite2D" parent="." index="2"]
+position = Vector2(3.625, 0.0861969)
+scale = Vector2(1.78017, 1.78017)
+texture = ExtResource("2_gtcup")
+
+[node name="DialogueBox" parent="Control" index="0"]
+visible = true
+offset_left = -615.0
+offset_top = -285.0
+offset_right = -115.0
+offset_bottom = 15.0
+data = ExtResource("3_recdk")

@@ -1,0 +1,60 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://drpp44uolgbvg"]
+
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_0fqxi"]
+
+[resource]
+script = ExtResource("1_0fqxi")
+starts = {
+"Start": &"0_1"
+}
+nodes = {
+"0_1": {
+"link": &"1_1",
+"offset": Vector2(0, 0),
+"start_id": "Start"
+},
+"1_1": {
+"dialogue": "Ah, hello, detective. I figured you’d be making your rounds. Can I be of any assistance?",
+"offset": Vector2(361, -41),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": "Who are you?"
+},
+1: {
+"condition": {},
+"link": "END",
+"text": "Who is..."
+},
+2: {
+"condition": {},
+"link": "END",
+"text": "What is..."
+}
+},
+"size": Vector2(300, 289),
+"speaker": "Chiri de Pomme"
+},
+"1_2": {
+"dialogue": "Well, I’m a director and producer. I’ve been in the industry for almost 8 years, and I’m currently working on Titanic III. I’m really excited about it. We start auditions in a couple weeks. ",
+"offset": Vector2(748, -226),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "How did you get invited?"
+},
+1: {
+"condition": {},
+"link": "END",
+"text": "Tell me about Titanic II"
+}
+},
+"size": Vector2(300, 256),
+"speaker": "Chiri de Pomme"
+}
+}
+variables = {}
+strays = Array[String]([])
+characters = ""

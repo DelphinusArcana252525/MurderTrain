@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://j4id8px05fs6"]
 
-[ext_resource type="Script" path="res://who_dunnit.gd" id="1_esrdx"]
-[ext_resource type="PackedScene" uid="uid://8b5lpikqv30v" path="res://who_dunnit_char.tscn" id="1_us0px"]
+[ext_resource type="Script" path="res://scripts/who_dunnit.gd" id="1_esrdx"]
+[ext_resource type="PackedScene" uid="uid://8b5lpikqv30v" path="res://scenes/who_dunnit_char.tscn" id="1_us0px"]
 [ext_resource type="Texture2D" uid="uid://cummx5jj1p6bw" path="res://assets/chacters/Pamlet_Hemmingsworth.png" id="2_pch3g"]
 [ext_resource type="Texture2D" uid="uid://3ubbuxa44t6i" path="res://assets/chacters/Anwar_Isai.png" id="4_0644u"]
 [ext_resource type="Texture2D" uid="uid://cauxbgwh7orpb" path="res://assets/chacters/Inoue_Isai.png" id="5_pwlle"]

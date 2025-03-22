@@ -1,0 +1,68 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://ci8vocsenut6f"]
+
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_jtslq"]
+
+[resource]
+script = ExtResource("1_jtslq")
+starts = {
+"Start": &"0_1"
+}
+nodes = {
+"0_1": {
+"link": &"1_1",
+"offset": Vector2(0, 0),
+"start_id": "Start"
+},
+"1_1": {
+"dialogue": "Good evening detective. I can not believe that someone would be murdered at this party. I want to be very clear that I did not do it. I just came here to celebrate the release of Silent Witness, I never meant to get caught up in anything like this. By the way, have you seen my purse?",
+"offset": Vector2(260, -120),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": "Tell me about yourself"
+},
+1: {
+"condition": {},
+"link": "END",
+"text": "Who is..."
+},
+2: {
+"condition": {},
+"link": "END",
+"text": "What is..."
+}
+},
+"size": Vector2(300, 289),
+"speaker": "Loni Johnson"
+},
+"1_2": {
+"dialogue": "Well, I’m an actress and soon to audition for Titanic III. I’m really hoping to get the role, and I bet it’s going to be my big break. ",
+"offset": Vector2(680, -400),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": "Why'd you throw the party?"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Loni Johnson"
+},
+"1_3": {
+"dialogue": "What I tell people is that I wanted to celebrate Joi and Pamlet’s work, but the truth is I’m ingratiating myself with Chiri de Pomme, since I really want the lead role in their new film. ",
+"offset": Vector2(1100, -480),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Loni Johnson"
+}
+}
+variables = {}
+strays = Array[String]([])
+characters = ""

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://8b5lpikqv30v"]
 
-[ext_resource type="Script" path="res://who_dunnit_char.gd" id="1_xfhw5"]
+[ext_resource type="Script" path="res://scripts/who_dunnit_char.gd" id="1_84l0q"]
 
 [sub_resource type="GDScript" id="GDScript_alrbd"]
 script/source = "extends Sprite2D
@@ -10,7 +10,7 @@ script/source = "extends Sprite2D
 size = Vector2(160, 256)
 
 [node name="WhoDunnitChar" type="Area2D"]
-script = ExtResource("1_xfhw5")
+script = ExtResource("1_84l0q")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(3, 3)

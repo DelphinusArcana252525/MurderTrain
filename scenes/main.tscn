@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dkrmtom5u3jm0" path="res://scenes/gui/arrow_set.tscn" id="3_65k0i"]
 [ext_resource type="PackedScene" uid="uid://ck156cwubslk7" path="res://scenes/gui/inventory.tscn" id="4_icton"]
 [ext_resource type="PackedScene" uid="uid://byd0yup8koql0" path="res://scenes/train.tscn" id="4_k3nma"]
-[ext_resource type="PackedScene" uid="uid://j4id8px05fs6" path="res://who_dunnit.tscn" id="7_5mgnv"]
+[ext_resource type="PackedScene" uid="uid://j4id8px05fs6" path="res://scenes/who_dunnit.tscn" id="7_5mgnv"]
 [ext_resource type="Script" path="res://scripts/camera_2d.gd" id="7_b0w5v"]
 
 [node name="Main" type="Node2D"]

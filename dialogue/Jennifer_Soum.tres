@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://d2hbu1tyf0la6"]
+
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_7qgtq"]
+
+[resource]
+script = ExtResource("1_7qgtq")
+starts = {
+"Start": &"0_1"
+}
+nodes = {
+"0_1": {
+"link": &"1_1",
+"offset": Vector2(-440, -207),
+"start_id": "Start"
+},
+"1_1": {
+"dialogue": "Ah, the detective. Tell me, have you solved the murder yet? I would desperately appreciate being allowed to depart from this train. ",
+"offset": Vector2(-149, -190),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": "Who are you?"
+},
+1: {
+"condition": {},
+"link": "END",
+"text": "Who is..."
+}
+},
+"size": Vector2(300, 256),
+"speaker": "Jennifer Soum"
+},
+"1_2": {
+"dialogue": "You don’t know about me already? Truly, I am shocked.",
+"offset": Vector2(240, -340),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Who else is auditioning?"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Jennifer Soum"
+}
+}
+variables = {}
+strays = Array[String]([])
+characters = ""

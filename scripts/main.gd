@@ -4,7 +4,7 @@ extends Node2D
 @onready var camera_2d: Camera2D = $Camera2D
 
 func _ready() -> void:
-	preload("res://who_dunnit.tscn")
+	preload("res://scenes/who_dunnit.tscn")
 
 func _input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("restart"):
