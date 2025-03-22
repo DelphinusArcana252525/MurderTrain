@@ -60,7 +60,7 @@ offset_right = 576.0
 offset_bottom = 324.0
 color = Color(0, 0, 0, 1)
 
-[node name="Label" type="Label" parent="WinScreen"]
+[node name="WinLabel" type="Label" parent="WinScreen"]
 offset_left = -576.0
 offset_top = -324.0
 offset_right = 576.0
@@ -70,6 +70,14 @@ text = "Correct!
 You Win!"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="ResetLabel" type="Label" parent="WinScreen"]
+offset_left = -152.0
+offset_top = 244.0
+offset_right = 166.0
+offset_bottom = 286.0
+theme_override_font_sizes/font_size = 30
+text = "Press \"r\" to play again"
 
 [node name="LoseScreen" type="Sprite2D" parent="."]
 visible = false
@@ -82,7 +90,7 @@ offset_right = 576.0
 offset_bottom = 324.0
 color = Color(0, 0, 0, 1)
 
-[node name="Label" type="Label" parent="LoseScreen"]
+[node name="LoseLabel" type="Label" parent="LoseScreen"]
 offset_left = -576.0
 offset_top = -324.0
 offset_right = 576.0
@@ -92,6 +100,14 @@ text = "Incorrect Guess.
 You Lose :("
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="ResetLabel" type="Label" parent="LoseScreen"]
+offset_left = -120.0
+offset_top = 228.0
+offset_right = 124.0
+offset_bottom = 270.0
+theme_override_font_sizes/font_size = 30
+text = "Press \"r\" to reset"
 
 [connection signal="clicked" from="JenniferSoum" to="." method="_on_jennifer_soum_clicked"]
 [connection signal="clicked" from="ChiriDePomme" to="." method="_on_chiri_de_pomme_clicked"]
