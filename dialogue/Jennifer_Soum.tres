@@ -24,21 +24,150 @@ nodes = {
 },
 1: {
 "condition": {},
-"link": "END",
+"link": &"1_5",
 "text": "Who is..."
+},
+2: {
+"condition": {},
+"link": &"1_10",
+"text": "What is Titanic III?"
+}
+},
+"size": Vector2(300, 289),
+"speaker": "Jennifer Soum"
+},
+"1_10": {
+"dialogue": "Yes, it is to be the next film I partake in. Destined to be a blockbuster, it shall be a daring story of romance and tragedy, set on the backdrop of the watery expanse. ",
+"offset": Vector2(200, -220),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Jennifer Soum"
+},
+"1_2": {
+"dialogue": "You have not heard of me already? Truly, I am shocked. I have portrayed major characters in numerous excellent films. I am soon to be cast for Titanic III, which is sure to be a high point in my already illustrious career. ",
+"offset": Vector2(200, -500),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": "Who else is auditioning?"
+},
+1: {
+"condition": {},
+"link": &"1_4",
+"text": "What else should I know about you?"
 }
 },
 "size": Vector2(300, 256),
 "speaker": "Jennifer Soum"
 },
-"1_2": {
-"dialogue": "You don’t know about me already? Truly, I am shocked.",
-"offset": Vector2(240, -340),
+"1_3": {
+"dialogue": "Joi Launda and Loni Johnson were, but I am confident I will claim the role. ",
+"offset": Vector2(571.319, -518.076),
 "options": {
 0: {
 "condition": {},
 "link": "END",
-"text": "Who else is auditioning?"
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Jennifer Soum"
+},
+"1_4": {
+"dialogue": "I live in a grand mansion, attend many parties such as this one to distance myself from those such as detectives, and I am dreadfully allergic to peanuts. ",
+"offset": Vector2(611.27, -209.344),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Jennifer Soum"
+},
+"1_5": {
+"dialogue": ".",
+"offset": Vector2(180, 40),
+"options": {
+0: {
+"condition": {},
+"link": &"1_6",
+"text": "Chiri de Pomme"
+},
+1: {
+"condition": {},
+"link": &"1_7",
+"text": "Anwar Isai"
+},
+2: {
+"condition": {},
+"link": &"1_8",
+"text": "Joi Launda"
+},
+3: {
+"condition": {},
+"link": &"1_9",
+"text": "Loni Johnson"
+}
+},
+"size": Vector2(300, 289),
+"speaker": "Choose a person"
+},
+"1_6": {
+"dialogue": "Yes, Mondamme de Pomme is a true visionary. They shall direct my next film, Titanic III, and have already been putting much effort into its conception. ",
+"offset": Vector2(593.884, 83.7306),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Jennifer Soum"
+},
+"1_7": {
+"dialogue": "Anwar happens to make an excellent friend of mine. She presents a truly content comportment, and I believe it to be veritable. Nothing might anger her, nor cause her to fluster. She is one of the best people I am acquainted with. ",
+"offset": Vector2(634.865, 421.512),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Jennifer Soum"
+},
+"1_8": {
+"dialogue": "We were friends for a long time, but that time came to an end when they expressed disappointment in my views of certain individuals. I regret that we did not have the chance to rectify our differences. ",
+"offset": Vector2(951.535, 193.013),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Jennifer Soum"
+},
+"1_9": {
+"dialogue": "Loni Johnson? Ah, but of course. She is a good actress, though of course not nearly on my level. In fact, she believes she has a chance at the Titanic III role. Ha! Imagine that!",
+"offset": Vector2(961.571, 517.156),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
 }
 },
 "size": Vector2(300, 240),
