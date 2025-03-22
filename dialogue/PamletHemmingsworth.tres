@@ -33,7 +33,7 @@ nodes = {
 "text": "What do you know about..."
 }
 },
-"size": Vector2(300, 256),
+"size": Vector2(300, 289),
 "speaker": "Pamlet Hemmingsworth"
 },
 "1_10": {
@@ -46,7 +46,7 @@ nodes = {
 "text": "Thank you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Pamelt Hemmingsworth"
 },
 "1_11": {
@@ -60,7 +60,7 @@ nodes = {
 "text": "Thank you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Pamlet Hemmingsworth"
 },
 "1_12": {
@@ -73,12 +73,12 @@ nodes = {
 "text": "Thank you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Pamlet Hemmingsworth"
 },
 "1_13": {
-"dialogue": "Something something",
-"offset": Vector2(1080, -700),
+"dialogue": "No, not really. There were some pretty competitive auditions, including Joi beating Anwar for the main role, but they were resolved amiably. ",
+"offset": Vector2(1080, 200),
 "options": {
 0: {
 "condition": {},
@@ -86,7 +86,7 @@ nodes = {
 "text": "Thank you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Pamlet Hemmingsworth"
 },
 "1_14": {
@@ -104,11 +104,11 @@ nodes = {
 "text": "Thank you"
 }
 },
-"size": Vector2(300, 256),
+"size": Vector2(300, 289),
 "speaker": "Pamlet Hemmingsworth"
 },
 "1_15": {
-"dialogue": "Unfinished Titanic III info",
+"dialogue": "Chiri is really excited about it and thinks it'll be a really big break for them. To be honest, I'm not very confident it'll work, but I trust Chiri to do a good job. Actually, I think three people at this party are soon to audition: Loni Johnson, Jennifer Soum, and...Joi Launda. ",
 "offset": Vector2(1100, 920),
 "options": {
 0: {
@@ -117,7 +117,7 @@ nodes = {
 "text": "Thank you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Pamlet Hemmingsworth"
 },
 "1_16": {
@@ -130,7 +130,7 @@ nodes = {
 "text": "Thank you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Pamlet Hemmingsworth"
 },
 "1_17": {
@@ -148,7 +148,7 @@ nodes = {
 "text": "Have you two had any professional disputes?"
 }
 },
-"size": Vector2(300, 260),
+"size": Vector2(300, 289),
 "speaker": "Pamlet Hemmingsworth"
 },
 "1_18": {
@@ -161,20 +161,25 @@ nodes = {
 "text": "Thank you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Pamlet Hemmingsworth"
 },
 "1_19": {
-"dialogue": "Unfinished Silent Witness info",
-"offset": Vector2(909.574, 957.676),
+"dialogue": "I'd love to! It's an adventurous spy thriller, with lots of intrigue and drama. I'm really excited with how it turned out, and of course this party is for its release. We had lots of fun on set, with...oh, right. Yeah. Joi stared in it. ",
+"offset": Vector2(700, 300),
 "options": {
 0: {
 "condition": {},
 "link": "END",
 "text": "Thank you"
+},
+1: {
+"condition": {},
+"link": &"1_13",
+"text": "Was there any drama on set?"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Pamlet Hemmingsworth"
 },
 "1_2": {
@@ -188,11 +193,11 @@ nodes = {
 },
 1: {
 "condition": {},
-"link": "END",
+"link": &"1_13",
 "text": "Was there any drama on set"
 }
 },
-"size": Vector2(300, 256),
+"size": Vector2(300, 289),
 "speaker": "Pamlet Hemmingsworth"
 },
 "1_3": {
@@ -220,7 +225,7 @@ nodes = {
 "text": "Movies"
 }
 },
-"size": Vector2(300, 289),
+"size": Vector2(300, 322),
 "speaker": "Select"
 },
 "1_4": {
@@ -229,25 +234,20 @@ nodes = {
 "options": {
 0: {
 "condition": {},
-"link": &"1_13",
-"text": "Jennifer Soum"
-},
-1: {
-"condition": {},
 "link": &"1_9",
 "text": "Anwar Isai"
 },
-2: {
+1: {
 "condition": {},
 "link": &"1_8",
 "text": "Loni Johnson"
 }
 },
-"size": Vector2(380, 289),
+"size": Vector2(380, 322),
 "speaker": "Select a character"
 },
 "1_5": {
-"dialogue": "Unfinished Joi Launda info",
+"dialogue": "Sure, Joi was a great help, really motivated. They're good friends with Anwar Isai, who also auditionned. Always the overachiever, they're already planning to audition for Titanic III. Or, well, they were in any case. ",
 "offset": Vector2(600, 40),
 "options": {
 0: {
@@ -256,7 +256,7 @@ nodes = {
 "text": "Thank you!"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Pamlet Hemmingsworth"
 },
 "1_6": {
@@ -274,7 +274,7 @@ nodes = {
 "text": "Chiri de Pomme"
 }
 },
-"size": Vector2(300, 256),
+"size": Vector2(300, 289),
 "speaker": "Select a character"
 },
 "1_7": {
@@ -292,7 +292,7 @@ nodes = {
 "text": "The Silent Witness"
 }
 },
-"size": Vector2(300, 256),
+"size": Vector2(300, 289),
 "speaker": "Select a movie"
 },
 "1_8": {
@@ -305,7 +305,7 @@ nodes = {
 "text": "Thank you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Pamlet Hemmingsworth"
 },
 "1_9": {
@@ -328,7 +328,7 @@ nodes = {
 "text": "Was she mad?"
 }
 },
-"size": Vector2(300, 289),
+"size": Vector2(300, 322),
 "speaker": "Pamlet Hemmingsworth"
 },
 "5_1": {
