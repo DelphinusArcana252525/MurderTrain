@@ -12,7 +12,6 @@ scale = Vector2(1.58621, 1.58621)
 texture = ExtResource("2_5jw2m")
 
 [node name="DialogueBox" parent="Control" index="0"]
-visible = true
 offset_left = -175.0
 offset_top = -292.0
 offset_right = 325.0

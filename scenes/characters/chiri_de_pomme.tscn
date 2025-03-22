@@ -15,7 +15,6 @@ scale = Vector2(1.78017, 1.78017)
 texture = ExtResource("2_gtcup")
 
 [node name="DialogueBox" parent="Control" index="0"]
-visible = true
 offset_left = -615.0
 offset_top = -285.0
 offset_right = -115.0

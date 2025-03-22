@@ -19,16 +19,127 @@ nodes = {
 "options": {
 0: {
 "condition": {},
-"link": "END",
+"link": &"1_2",
 "text": "Tell me about yourself"
 },
 1: {
 "condition": {},
-"link": "END",
+"link": &"1_5",
 "text": "Who is..."
 }
 },
 "size": Vector2(300, 289),
+"speaker": "Inoue Isai"
+},
+"1_2": {
+"dialogue": "Well, I’m a writer. I do all sorts of stuff, like film, TV, and books. Chances are, if you’ve read ten popular novels in the past year, I was a ghost writer on one of them. Anwar, right here, is my sister. I can tell you about her if you want.",
+"offset": Vector2(361, -344),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": "That sounds good"
+},
+1: {
+"condition": {},
+"link": &"1_4",
+"text": "What are you writing now?"
+}
+},
+"size": Vector2(300, 256),
+"speaker": "Inoue Isai"
+},
+"1_3": {
+"dialogue": "Sure, she’s my older sister and is really good at it. Lets me borrow her stuff a lot and hang out on set when she’s filming. She’s a great actress, too, and really deserves to be in bigger roles. ",
+"offset": Vector2(780, -200),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Inoue Isai"
+},
+"1_4": {
+"dialogue": "I’m wrapping up a chapter of a new mystery novel, then I’m hoping to join the writing staff for Titanic III, even though I know it’s going to flop. ",
+"offset": Vector2(780, -500),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Inoue Isai"
+},
+"1_5": {
+"dialogue": ".",
+"offset": Vector2(343.513, 27.8493),
+"options": {
+0: {
+"condition": {},
+"link": &"1_6",
+"text": "Pamlet Hemmingsworth"
+},
+1: {
+"condition": {},
+"link": &"1_7",
+"text": "Loni Johnson"
+},
+2: {
+"condition": {},
+"link": &"1_3",
+"text": "Anwar Isai"
+},
+3: {
+"condition": {},
+"link": &"1_8",
+"text": "Joi Launda"
+}
+},
+"size": Vector2(320, 289),
+"speaker": "Select a person"
+},
+"1_6": {
+"dialogue": "Ugh, do I have to? Yes? Well, fine. He’s a terrible director, making blunder after blunder but always letting someone else take the fall. He can’t tell a good actress from a fake, nor a good plot from a cliché. I'm never working with him again. ",
+"offset": Vector2(780, 100),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Inoue Isai"
+},
+"1_7": {
+"dialogue": "She’s really fun but constantly flaking. Super dedicated to her work. We have coffee sometimes, and chat about our favourite movies. We’re hoping to make a film of our own some day. ",
+"offset": Vector2(797.489, 424.036),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Inoue Isai"
+},
+"1_8": {
+"dialogue": "I didn’t really know them well. I know they took the lead role in Silent Witness away from Anwar, and I did get pretty annoyed about that, but I’m over it now. ",
+"offset": Vector2(1190.9, 399.447),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
 "speaker": "Inoue Isai"
 }
 }
