@@ -42,15 +42,56 @@ position = Vector2(1048, 400)
 sprite = ExtResource("5_pwlle")
 text = "Inoue Isai"
 
-[node name="EndScreen" type="Sprite2D" parent="."]
-position = Vector2(576, 324)
-
-[node name="Label" type="Label" parent="."]
+[node name="WhoDunnitLabel" type="Label" parent="."]
 offset_left = 160.0
 offset_right = 1030.0
 offset_bottom = 192.0
 theme_override_font_sizes/font_size = 140
 text = "Who Dunnit?"
+
+[node name="WinScreen" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(576, 324)
+
+[node name="ColorRect" type="ColorRect" parent="WinScreen"]
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="WinScreen"]
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+theme_override_font_sizes/font_size = 200
+text = "Correct!
+You Win!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LoseScreen" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(576, 324)
+
+[node name="ColorRect" type="ColorRect" parent="LoseScreen"]
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="LoseScreen"]
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+theme_override_font_sizes/font_size = 130
+text = "Incorrect Guess.
+You Lose :("
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="clicked" from="JenniferSoum" to="." method="_on_jennifer_soum_clicked"]
 [connection signal="clicked" from="ChiriDePomme" to="." method="_on_chiri_de_pomme_clicked"]

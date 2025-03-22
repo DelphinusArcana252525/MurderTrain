@@ -1,7 +1,5 @@
 extends Node2D
 
-@export var win_sprite: Texture2D
-@export var lose_sprite: Texture2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -30,9 +28,9 @@ func _on_inoue_isai_clicked() -> void:
 	win()
 
 func fail() -> void:
-	$EndScreen.texture = lose_sprite
+	$LoseScreen.show()
 	print("nope")
 
 func win() -> void:
-	$EndScreen.texture = win_sprite
+	$WinScreen.show()
 	print("yep")
