@@ -20,7 +20,7 @@ texture = ExtResource("2_fakv6")
 [node name="DialogueBox" parent="Control" index="0"]
 offset_left = -445.0
 offset_top = -274.0
-offset_right = -102.0
+offset_right = 11.0
 offset_bottom = -24.0
 theme = SubResource("Theme_cfbgq")
 data = ExtResource("3_ua0iy")

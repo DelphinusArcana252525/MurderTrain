@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4y7qmbinbtn6"]
+
+[ext_resource type="PackedScene" uid="uid://dd06y6yukgv6n" path="res://scenes/character.tscn" id="1_17hk7"]
+[ext_resource type="Texture2D" uid="uid://3ubbuxa44t6i" path="res://assets/chacters/Anwar_Isai.png" id="2_rvkrk"]
+[ext_resource type="Resource" uid="uid://dlqb3yl3rhx3s" path="res://dialogue/Anwar_Isai.tres" id="3_uwyq6"]
+
+[node name="Anwar_Isai" instance=ExtResource("1_17hk7")]
+
+[node name="Sprite2D" parent="." index="2"]
+position = Vector2(8, -8)
+scale = Vector2(2.11207, 2.11207)
+texture = ExtResource("2_rvkrk")
+
+[node name="DialogueBox" parent="Control" index="0"]
+offset_left = -399.0
+offset_top = -256.0
+offset_right = 101.0
+offset_bottom = 44.0
+data = ExtResource("3_uwyq6")

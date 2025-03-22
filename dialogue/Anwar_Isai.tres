@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://dlqb3yl3rhx3s"]
+
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_wlkxf"]
+
+[resource]
+script = ExtResource("1_wlkxf")
+starts = {
+"Start": &"0_1"
+}
+nodes = {
+"0_1": {
+"link": &"1_1",
+"offset": Vector2(-418, -217),
+"start_id": "Start"
+},
+"0_2": {
+"link": "END",
+"offset": Vector2(-320, 180),
+"start_id": ""
+},
+"1_1": {
+"dialogue": "Ah, hello, Detective. I’m really sad about Joi’s death. Please, do you know who did it? Is there anything I can do to help you find them?",
+"offset": Vector2(-160, -380),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Tell me about yourself"
+},
+1: {
+"condition": {},
+"link": "END",
+"text": "Who is..."
+},
+2: {
+"condition": {},
+"link": "END",
+"text": "What is..."
+}
+},
+"size": Vector2(300, 289),
+"speaker": "Anwar Isai"
+}
+}
+variables = {}
+strays = Array[String](["0_2"])
+characters = ""

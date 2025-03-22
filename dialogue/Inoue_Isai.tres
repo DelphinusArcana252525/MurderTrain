@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://drxaf268yhp65"]
+
+[ext_resource type="Script" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_em6ui"]
+
+[resource]
+script = ExtResource("1_em6ui")
+starts = {
+"Start": &"0_1"
+}
+nodes = {
+"0_1": {
+"link": &"1_1",
+"offset": Vector2(-370, -288),
+"start_id": "Start"
+},
+"1_1": {
+"dialogue": "Hello, detective. I was really sorry to hear about Joi Launda. How can I help you find the killer?",
+"offset": Vector2(-26, -280),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Tell me about yourself"
+},
+1: {
+"condition": {},
+"link": "END",
+"text": "Who is..."
+}
+},
+"size": Vector2(300, 289),
+"speaker": "Inoue Isai"
+}
+}
+variables = {}
+strays = Array[String]([])
+characters = ""
