@@ -1,8 +1,7 @@
 extends Node2D
 
 @onready var inventory: Node2D = $Camera2D/Inventory
-
-var items : Array = ["bag", "key", "knife", "poster_0", "poster_1", "plant"]
+@onready var camera_2d: Camera2D = $Camera2D
 
 func _ready() -> void:
 	preload("res://who_dunnit.tscn")
@@ -21,3 +20,5 @@ func _on_guess_button_pressed() -> void:
 
 func add_item(item : String):
 	inventory.add_item(item)
+	if item == "key":
+		camera_2d.got_key()

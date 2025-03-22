@@ -17,17 +17,21 @@ func _on_right_arrow_clicked() -> void:
 	go_right()
 
 func go_left():
-	camera_2d.go_left()
+	camera_2d.move_to_car(camera_2d.current_car - 1)
 
 func go_right():
-	camera_2d.go_right()
+	camera_2d.move_to_car(camera_2d.current_car + 1)
 
 func reset_arrows():
-	right_arrow.modulate.a = 1
-	left_arrow.modulate.a = 1
+	right_arrow.enable()
+	left_arrow.enable()
 
 func hide_arrow(arrow : String):
 	if arrow == "right":
-		right_arrow.modulate.a = .25
+		right_arrow.disable()
 	if arrow == "left":
-		left_arrow.modulate.a = .25
+		left_arrow.disable()
+
+func lock_arrow():
+	left_arrow.disable()
+	left_arrow.lock()

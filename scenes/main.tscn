@@ -64,23 +64,24 @@ z_index = 20
 position = Vector2(-576, -324)
 
 [node name="DemoNode" type="Node2D" parent="."]
+position = Vector2(1120, 0)
 
 [node name="ClickableBag" parent="DemoNode" instance=ExtResource("7_xu7a7")]
-position = Vector2(591, 386)
+position = Vector2(480, 364)
 
 [node name="ClickableKey" parent="DemoNode" instance=ExtResource("8_ms4qw")]
-position = Vector2(874, 440)
+position = Vector2(566, 452)
 
 [node name="ClickableKnife" parent="DemoNode" instance=ExtResource("9_vkn5g")]
-position = Vector2(742, 382)
+position = Vector2(661, 364)
 
 [node name="ClickablePlant" parent="DemoNode" instance=ExtResource("10_yx728")]
-position = Vector2(477, 454)
+position = Vector2(388, 451)
 
 [node name="ClickablePoster0" parent="DemoNode" instance=ExtResource("11_iajql")]
-position = Vector2(354, 403)
+position = Vector2(324, 365)
 
 [node name="ClickablePoster1" parent="DemoNode" instance=ExtResource("12_r27g6")]
-position = Vector2(189, 441)
+position = Vector2(238, 444)
 
 [connection signal="pressed" from="Camera2D/GuessButton" to="." method="_on_guess_button_pressed"]
