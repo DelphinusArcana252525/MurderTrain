@@ -12,12 +12,12 @@ offset_right = 43.0633
 offset_bottom = 88.6721
 
 [node name="PamletHemmingsworth" parent="." index="2" instance=ExtResource("2_oo4vs")]
-position = Vector2(76.9367, 1.32788)
+position = Vector2(76.8116, 1.74502)
 scale = Vector2(0.3, 0.3)
 
 [node name="ClickablePoster0" parent="." index="3" instance=ExtResource("3_f5o0p")]
 position = Vector2(10.0944, -6.9363)
 
 [node name="Jennifer_Soum" parent="." index="4" instance=ExtResource("4_pcbcn")]
-position = Vector2(-43.0633, 3.3279)
+position = Vector2(-43.1467, 3.87018)
 scale = Vector2(0.3, 0.3)

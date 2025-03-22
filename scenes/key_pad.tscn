@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://chb1yo53re04c"]
+
+[ext_resource type="Script" path="res://scripts/key_pad.gd" id="1_3a7u0"]
+[ext_resource type="FontFile" uid="uid://v2wkraa5704a" path="res://assets/item_font.ttf" id="1_jualo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eg0j5"]
+bg_color = Color(0.254902, 0.254902, 0.254902, 0.87451)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_om4dp"]
+bg_color = Color(0.173924, 0.337694, 0.35232, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t8vcy"]
+bg_color = Color(0.10975, 0.231344, 0.242911, 1)
+
+[node name="KeyPad" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_3a7u0")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 168.0
+offset_bottom = 104.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_eg0j5")
+
+[node name="LineEdit" type="LineEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 46.0
+offset_right = 124.438
+offset_bottom = 77.0
+theme_override_colors/font_placeholder_color = Color(0.601223, 0.601223, 0.601223, 1)
+theme_override_fonts/font = ExtResource("1_jualo")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxFlat_om4dp")
+theme_override_styles/normal = SubResource("StyleBoxFlat_t8vcy")
+placeholder_text = "0000"
+alignment = 1
+max_length = 4
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 10.0
+offset_right = 163.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.464021, 0.732092, 0.75794, 1)
+theme_override_fonts/font = ExtResource("1_jualo")
+theme_override_font_sizes/font_size = 29
+text = "Enter Code"
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="text_changed" from="Panel/LineEdit" to="." method="_on_line_edit_text_changed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

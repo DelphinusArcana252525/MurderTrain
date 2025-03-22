@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://d4mb1uorlpov7"]
 
 [ext_resource type="Script" path="res://scripts/item.gd" id="1_5fxn6"]
-[ext_resource type="Texture2D" uid="uid://dw7vh331ja3r6" path="res://assets/temp/tempItemAssets/item_0.png" id="1_vvt0i"]
+[ext_resource type="Texture2D" uid="uid://d0cgeagdh6kyv" path="res://assets/items/bag.png" id="2_isftw"]
 [ext_resource type="PackedScene" uid="uid://b34dvwmtjkkpn" path="res://scenes/gui/item_info_box.tscn" id="3_smqun"]
 
 [node name="itemBase" type="Control"]
@@ -14,7 +14,7 @@ script = ExtResource("1_5fxn6")
 [node name="Sprite2D" type="TextureRect" parent="."]
 layout_mode = 0
 scale = Vector2(3, 3)
-texture = ExtResource("1_vvt0i")
+texture = ExtResource("2_isftw")
 
 [node name="ItemInfoBox" parent="." instance=ExtResource("3_smqun")]
 visible = false

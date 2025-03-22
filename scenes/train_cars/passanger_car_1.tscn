@@ -1,23 +1,24 @@
 [gd_scene load_steps=6 format=3 uid="uid://d12psxu0mst2f"]
 
 [ext_resource type="PackedScene" uid="uid://dvdev0cihpcus" path="res://scenes/scene_bases/passanger_car.tscn" id="1_f6y3y"]
-[ext_resource type="PackedScene" uid="uid://ca8ma11swq5vi" path="res://scenes/clickable_items/clickable_key.tscn" id="2_ob7wo"]
 [ext_resource type="PackedScene" uid="uid://dr0vo0xnlnlow" path="res://scenes/clickable_items/clickable_poster_1.tscn" id="3_1dsxt"]
 [ext_resource type="PackedScene" uid="uid://cx8a4a6eq2x6e" path="res://scenes/characters/chiri_de_pomme.tscn" id="4_bvu1q"]
 [ext_resource type="PackedScene" uid="uid://6urus7fk2xww" path="res://scenes/characters/loni_johnson.tscn" id="5_xbhoi"]
+[ext_resource type="PackedScene" uid="uid://bjuamu8vbbgub" path="res://scenes/safe.tscn" id="5_xqub5"]
 
 [node name="PassangerCar1" instance=ExtResource("1_f6y3y")]
 
-[node name="ClickableKey" parent="." index="2" instance=ExtResource("2_ob7wo")]
-position = Vector2(16, 10)
-
-[node name="ClickablePoster1" parent="." index="3" instance=ExtResource("3_1dsxt")]
+[node name="ClickablePoster1" parent="." index="2" instance=ExtResource("3_1dsxt")]
 position = Vector2(-70, -8)
 
-[node name="Chiri_de_Pomme" parent="." index="4" instance=ExtResource("4_bvu1q")]
-position = Vector2(72, 5)
+[node name="Chiri_de_Pomme" parent="." index="3" instance=ExtResource("4_bvu1q")]
+position = Vector2(68.6326, 5.42093)
 scale = Vector2(0.3, 0.3)
 
-[node name="Loni_Johnson" parent="." index="5" instance=ExtResource("5_xbhoi")]
-position = Vector2(-32, 5)
+[node name="Loni_Johnson" parent="." index="4" instance=ExtResource("5_xbhoi")]
+position = Vector2(-31.7194, 6.54339)
 scale = Vector2(0.3, 0.3)
+
+[node name="Safe" parent="." index="5" instance=ExtResource("5_xqub5")]
+position = Vector2(24.6332, 11.3882)
+scale = Vector2(0.1, 0.1)

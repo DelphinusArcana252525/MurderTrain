@@ -19,5 +19,5 @@ position = Vector2(-16, 5)
 scale = Vector2(0.3, 0.3)
 
 [node name="Inoue_Isai" parent="." index="5" instance=ExtResource("5_4vhxa")]
-position = Vector2(-64, 5)
+position = Vector2(-64.2806, 4.78954)
 scale = Vector2(0.3, 0.3)
