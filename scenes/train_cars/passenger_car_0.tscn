@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bpfbxictggajv"]
+[gd_scene load_steps=4 format=3 uid="uid://bpfbxictggajv"]
 
 [ext_resource type="PackedScene" uid="uid://dvdev0cihpcus" path="res://scenes/scene_bases/passanger_car.tscn" id="1_3dist"]
 [ext_resource type="PackedScene" uid="uid://b368ereypcg80" path="res://pamlet_hemmingsworth.tscn" id="2_oo4vs"]
+[ext_resource type="PackedScene" uid="uid://b8cktdum5wi18" path="res://scenes/clickable_items/clickable_poster_0.tscn" id="3_f5o0p"]
 
 [node name="PassengerCar0" instance=ExtResource("1_3dist")]
 offset_left = 3.0633
@@ -12,3 +13,6 @@ offset_bottom = 88.6721
 [node name="PamletHemmingsworth" parent="." index="2" instance=ExtResource("2_oo4vs")]
 position = Vector2(76.9367, 1.32788)
 scale = Vector2(0.3, 0.3)
+
+[node name="ClickablePoster0" parent="." index="3" instance=ExtResource("3_f5o0p")]
+position = Vector2(12.0944, 13.0637)

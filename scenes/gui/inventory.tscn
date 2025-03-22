@@ -8,23 +8,22 @@
 script = ExtResource("1_h7ika")
 
 [node name="InventoryBackground" type="Sprite2D" parent="."]
-position = Vector2(316, 42)
+position = Vector2(198, 44)
 texture = ExtResource("1_4r1u5")
-region_enabled = true
 region_rect = Rect2(103, 426, 632, 84)
 
 [node name="GridContainer" type="GridContainer" parent="."]
-offset_left = 23.0
-offset_top = 16.0
-offset_right = 74.0
-offset_bottom = 68.0
+offset_left = 25.0
+offset_top = 19.0
+offset_right = 76.0
+offset_bottom = 71.0
 theme_override_constants/h_separation = 60
-columns = 10
+columns = 6
 
 [node name="NewItemText" parent="." instance=ExtResource("3_yx7oi")]
 visible = false
 z_index = -3
-offset_left = 197.0
-offset_top = 95.0
-offset_right = 432.0
-offset_bottom = 206.0
+offset_left = 72.0
+offset_top = 98.0
+offset_right = 307.0
+offset_bottom = 214.0

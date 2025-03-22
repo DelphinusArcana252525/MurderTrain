@@ -1,5 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://du13kr2rbsqd4"]
+[gd_scene load_steps=3 format=3 uid="uid://du13kr2rbsqd4"]
 
 [ext_resource type="PackedScene" uid="uid://d08unfm1djku" path="res://scenes/scene_bases/beige_car.tscn" id="1_a4gvq"]
+[ext_resource type="PackedScene" uid="uid://fjwql2kgr05q" path="res://scenes/clickable_items/clickable_knife.tscn" id="2_0g5sp"]
 
 [node name="BeigeCar0" instance=ExtResource("1_a4gvq")]
+
+[node name="ClickableKnife" parent="." index="2" instance=ExtResource("2_0g5sp")]
+position = Vector2(20, 10)

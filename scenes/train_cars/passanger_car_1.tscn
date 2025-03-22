@@ -1,5 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://d12psxu0mst2f"]
+[gd_scene load_steps=4 format=3 uid="uid://d12psxu0mst2f"]
 
 [ext_resource type="PackedScene" uid="uid://dvdev0cihpcus" path="res://scenes/scene_bases/passanger_car.tscn" id="1_f6y3y"]
+[ext_resource type="PackedScene" uid="uid://ca8ma11swq5vi" path="res://scenes/clickable_items/clickable_key.tscn" id="2_ob7wo"]
+[ext_resource type="PackedScene" uid="uid://dr0vo0xnlnlow" path="res://scenes/clickable_items/clickable_poster_1.tscn" id="3_1dsxt"]
 
 [node name="PassangerCar1" instance=ExtResource("1_f6y3y")]
+
+[node name="ClickableKey" parent="." index="2" instance=ExtResource("2_ob7wo")]
+position = Vector2(-1, 13)
+
+[node name="ClickablePoster1" parent="." index="3" instance=ExtResource("3_1dsxt")]
+position = Vector2(-28, 13)
