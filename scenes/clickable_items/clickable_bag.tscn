@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dy0vqkteape55"]
+
+[ext_resource type="PackedScene" uid="uid://tol528cdumwp" path="res://scenes/scene_bases/clickable_item_base.tscn" id="1_wtf3l"]
+
+[node name="ClickableBag" instance=ExtResource("1_wtf3l")]

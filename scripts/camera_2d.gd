@@ -11,7 +11,7 @@ var current_car : int
 var tween : Tween
 
 @onready var train: Node2D = $"../Train"
-
+@onready var arrow_set: Node2D = $ArrowSet
 
 func _ready() -> void:
 	train_cars = train.get_children()[0].get_children()
@@ -24,6 +24,20 @@ func move_to_car(car_index: int):
 		var target_x = current_car * CAR_LENGTH * SCALE + OFFSET
 		tween = get_tree().create_tween()
 		tween.tween_property(self, "position:x", target_x, 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+		update_arrows()
+
+func update_arrows():
+	arrow_set.reset_arrows()
+	if at_far_left():
+		arrow_set.hide_arrow("left")
+	if at_far_right():
+		arrow_set.hide_arrow("right")
+
+func at_far_left():
+	return current_car == 0
+
+func at_far_right():
+	return current_car == train_cars.size() - 1
 
 func go_left():
 	move_to_car(current_car - 1)
