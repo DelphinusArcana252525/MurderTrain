@@ -13,7 +13,9 @@ func _process(_delta: float) -> void:
 		modulate.a -= 0.01
 	if modulate.a <= 0:
 		# To prevent a bunch of _process() funcs running in th background
-		queue_free()
+		# oddly this had bugs so I am removing it
+		# queue_free()
+		should_fade = false
 
 func _on_timer_timeout() -> void:
 	should_fade = true
