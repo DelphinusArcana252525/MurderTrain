@@ -152,13 +152,13 @@ speed = 0.0
 
 [node name="Engine" type="AnimatedSprite2D" parent="AstheticsNode"]
 z_index = 1
-position = Vector2(1117.12, 476.002)
+position = Vector2(1108.71, 476.002)
 scale = Vector2(5.3852, 5.3852)
 sprite_frames = SubResource("SpriteFrames_u2g41")
 frame_progress = 0.783596
 
 [node name="PassangerTrainCar" type="Sprite2D" parent="AstheticsNode"]
-position = Vector2(2495.34, 476.091)
+position = Vector2(2482.78, 476.08)
 scale = Vector2(5.385, 5.385)
 texture = ExtResource("6_sbshb")
 
