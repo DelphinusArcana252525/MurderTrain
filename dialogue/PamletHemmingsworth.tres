@@ -10,7 +10,7 @@ starts = {
 nodes = {
 "0_1": {
 "link": &"1_1",
-"offset": Vector2(-540, -240),
+"offset": Vector2(-580, -340),
 "start_id": "Start"
 },
 "0_2": {
@@ -65,7 +65,7 @@ nodes = {
 },
 "1_12": {
 "dialogue": "No, she took it well. Her sister got kind of annoyed on her behalf, but Anwar was fine with it. ",
-"offset": Vector2(1460, 60),
+"offset": Vector2(1860, -140),
 "options": {
 0: {
 "condition": {},
@@ -78,7 +78,7 @@ nodes = {
 },
 "1_13": {
 "dialogue": "No, not really. There were some pretty competitive auditions, including Joi beating Anwar for the main role, but they were resolved amiably. ",
-"offset": Vector2(1080, 200),
+"offset": Vector2(1480, 80),
 "options": {
 0: {
 "condition": {},
@@ -91,7 +91,7 @@ nodes = {
 },
 "1_14": {
 "dialogue": "Yeah, Anwar…wait, you didn’t say Anwar. Oh year, Inoue’s her sister. She came to the audition. They seemed close. Actually, come to think of it, she got more angry than Anwar about the casting.",
-"offset": Vector2(1040, 280),
+"offset": Vector2(1380, 380),
 "options": {
 0: {
 "condition": {},
@@ -109,7 +109,7 @@ nodes = {
 },
 "1_15": {
 "dialogue": "Chiri is really excited about it and thinks it'll be a really big break for them. To be honest, I'm not very confident it'll work, but I trust Chiri to do a good job. Actually, I think three people at this party are soon to audition: Loni Johnson, Jennifer Soum, and...Joi Launda. ",
-"offset": Vector2(1100, 920),
+"offset": Vector2(1460, 1040),
 "options": {
 0: {
 "condition": {},
@@ -122,7 +122,7 @@ nodes = {
 },
 "1_16": {
 "dialogue": "Why, the audition for Silent Witness, of course! Anwar and Joi were competing for the main role, and we gave it to Joi. It was a close call, though. ",
-"offset": Vector2(1480, 420),
+"offset": Vector2(1820, 380),
 "options": {
 0: {
 "condition": {},
@@ -135,7 +135,7 @@ nodes = {
 },
 "1_17": {
 "dialogue": "Oh yeah, Chiri is a director and producer, like me. They make good stuff. Right now, I think they’re working on another Titanic sequel, which is an interesting choice, but I trust they know what they’re talking about.",
-"offset": Vector2(1020, 580),
+"offset": Vector2(1020, 600),
 "options": {
 0: {
 "condition": {},
@@ -166,7 +166,7 @@ nodes = {
 },
 "1_19": {
 "dialogue": "I'd love to! It's an adventurous spy thriller, with lots of intrigue and drama. I'm really excited with how it turned out, and of course this party is for its release. We had lots of fun on set, with...oh, right. Yeah. Joi stared in it. ",
-"offset": Vector2(700, 300),
+"offset": Vector2(1000, 240),
 "options": {
 0: {
 "condition": {},
@@ -194,7 +194,7 @@ nodes = {
 1: {
 "condition": {},
 "link": &"1_13",
-"text": "Was there any drama on set"
+"text": "Was there any drama on set?"
 }
 },
 "size": Vector2(300, 289),
@@ -333,7 +333,7 @@ nodes = {
 },
 "5_1": {
 "false": "END",
-"offset": Vector2(129.603, 692.853),
+"offset": Vector2(-40, 640),
 "operator": 0,
 "true": "END",
 "value1": "",
