@@ -1,10 +1,12 @@
-[gd_scene load_steps=23 format=3 uid="uid://cuma5kiavq5no"]
+[gd_scene load_steps=25 format=3 uid="uid://cuma5kiavq5no"]
 
 [ext_resource type="Script" path="res://scripts/start_menu.gd" id="1_o7gqu"]
 [ext_resource type="FontFile" uid="uid://dvg5f6wpeu2t3" path="res://assets/fonts/title_font.ttf" id="2_rj0ah"]
 [ext_resource type="PackedScene" uid="uid://cmxexwbnaj6yo" path="res://scenes/scene_bases/button_base.tscn" id="2_ud0ha"]
 [ext_resource type="Texture2D" uid="uid://ctg8sv13j7u67" path="res://assets/train_cars/flipped_engine_sprite_sheet.png" id="4_l8mj7"]
 [ext_resource type="PackedScene" uid="uid://d37efhh7cef6l" path="res://scenes/background.tscn" id="5_58a76"]
+[ext_resource type="Texture2D" uid="uid://cpei3o6gyeq6k" path="res://assets/train_cars/passanger_train_car.png" id="6_sbshb"]
+[ext_resource type="FontFile" uid="uid://v2wkraa5704a" path="res://assets/fonts/item_font.ttf" id="7_2s5qv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uhqsp"]
 atlas = ExtResource("4_l8mj7")
@@ -130,7 +132,11 @@ animations = [{
 position = Vector2(560, 324)
 script = ExtResource("1_o7gqu")
 
-[node name="BackgroundTint" type="ColorRect" parent="."]
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(15.9771, 0)
+metadata/_edit_group_ = true
+
+[node name="BackgroundTint" type="ColorRect" parent="Camera2D"]
 z_index = -4
 offset_left = -576.0
 offset_top = -324.0
@@ -139,51 +145,117 @@ offset_bottom = 326.0
 mouse_filter = 2
 color = Color(0, 0, 0, 0.443137)
 
-[node name="Title" type="Label" parent="."]
-offset_left = -509.566
-offset_top = -335.364
-offset_right = 488.434
-offset_bottom = -135.364
+[node name="AstheticsNode" type="Node" parent="."]
+
+[node name="Background" parent="AstheticsNode" instance=ExtResource("5_58a76")]
+speed = 0.0
+
+[node name="Engine" type="AnimatedSprite2D" parent="AstheticsNode"]
+z_index = 1
+position = Vector2(1117.12, 476.002)
+scale = Vector2(5.3852, 5.3852)
+sprite_frames = SubResource("SpriteFrames_u2g41")
+frame_progress = 0.783596
+
+[node name="PassangerTrainCar" type="Sprite2D" parent="AstheticsNode"]
+position = Vector2(2495.34, 476.091)
+scale = Vector2(5.385, 5.385)
+texture = ExtResource("6_sbshb")
+
+[node name="StartMenuNodes" type="Node" parent="."]
+
+[node name="Title" type="Label" parent="StartMenuNodes"]
+offset_left = 50.434
+offset_top = -11.364
+offset_right = 1048.43
+offset_bottom = 188.636
 theme_override_colors/font_color = Color(0.652227, 2.04556e-06, 1.44392e-07, 1)
 theme_override_fonts/font = ExtResource("2_rj0ah")
 theme_override_font_sizes/font_size = 200
 text = "Murder Train"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-offset_left = -516.873
-offset_top = -150.218
-offset_right = 120.127
-offset_bottom = 269.782
+[node name="MenuButtonbox" type="VBoxContainer" parent="StartMenuNodes"]
+offset_left = 43.127
+offset_top = 173.782
+offset_right = 680.127
+offset_bottom = 593.782
 theme_override_constants/separation = 20
 metadata/_edit_group_ = true
 
-[node name="PlayButton" parent="VBoxContainer" instance=ExtResource("2_ud0ha")]
+[node name="PlayButton" parent="StartMenuNodes/MenuButtonbox" instance=ExtResource("2_ud0ha")]
 layout_mode = 2
 text = "Play"
 
-[node name="CreditsButton" parent="VBoxContainer" instance=ExtResource("2_ud0ha")]
+[node name="CreditsButton" parent="StartMenuNodes/MenuButtonbox" instance=ExtResource("2_ud0ha")]
 layout_mode = 2
 text = "Credits"
 
-[node name="SettingsButton" parent="VBoxContainer" instance=ExtResource("2_ud0ha")]
+[node name="SettingsButton" parent="StartMenuNodes/MenuButtonbox" instance=ExtResource("2_ud0ha")]
 layout_mode = 2
 text = "Settings"
 
-[node name="QuitButton" parent="VBoxContainer" instance=ExtResource("2_ud0ha")]
+[node name="QuitButton" parent="StartMenuNodes/MenuButtonbox" instance=ExtResource("2_ud0ha")]
 layout_mode = 2
 text = "Quit"
 
-[node name="Engine" type="AnimatedSprite2D" parent="."]
-position = Vector2(557.122, 152.002)
-rotation = -6.28319
-scale = Vector2(5.3852, 5.3852)
-sprite_frames = SubResource("SpriteFrames_u2g41")
-frame_progress = 0.783596
+[node name="SecondScreenNodes" type="Node" parent="."]
 
-[node name="Background" parent="." instance=ExtResource("5_58a76")]
-speed = 0.0
+[node name="BackButton" parent="SecondScreenNodes" instance=ExtResource("2_ud0ha")]
+offset_left = 1158.08
+offset_top = 4.77773
+offset_right = 1338.08
+offset_bottom = 94.7777
 
-[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[node name="CreditsLable" type="Label" parent="SecondScreenNodes"]
+visible = false
+offset_left = 1383.59
+offset_top = 19.9823
+offset_right = 2079.59
+offset_bottom = 407.982
+theme_override_colors/font_color = Color(1, 0.729412, 0.682353, 1)
+theme_override_fonts/font = ExtResource("7_2s5qv")
+theme_override_font_sizes/font_size = 16
+text = "Basic Train Cars:
+	https://kooky.itch.io/pixel-train
+
+Background:
+	https://edermunizz.itch.io/free-pixel-art-forest
+
+Items:
+	https://alexs-assets.itch.io/16x16-rpg-item-pack?download
+
+Decorations:
+	https://www.deviantart.com/silvervoidart/art/Pixel-Chairs-02-923150047
+
+Fonts:
+	https://www.fontspace.com/typewriter-font-f5889
+	https://www.fontspace.com/waptype
+
+Other Art:
+	Biko
+	Jackson a little
+
+Coding:
+	Jackson a lot
+	Zac
+
+Story:
+Zac"
+
+[node name="SettingsLabel" type="Label" parent="SecondScreenNodes"]
+offset_left = 1390.89
+offset_top = 123.889
+offset_right = 1848.89
+offset_bottom = 335.889
+theme_override_colors/font_color = Color(1, 0.729412, 0.682353, 1)
+theme_override_fonts/font = ExtResource("7_2s5qv")
+theme_override_font_sizes/font_size = 33
+text = "Yeah idk why you clicked that button there are no settings :/"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[connection signal="pressed" from="StartMenuNodes/MenuButtonbox/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="StartMenuNodes/MenuButtonbox/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="StartMenuNodes/MenuButtonbox/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="StartMenuNodes/MenuButtonbox/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="SecondScreenNodes/BackButton" to="." method="_on_back_button_pressed"]

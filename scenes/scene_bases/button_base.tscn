@@ -6,10 +6,10 @@
 bg_color = Color(0.266575, 0.266575, 0.266575, 1)
 
 [node name="ButtonBase" type="Button"]
-custom_minimum_size = Vector2(0, 90)
+custom_minimum_size = Vector2(180, 90)
 theme_override_colors/font_hover_color = Color(0.999965, 0.153843, 0.082387, 1)
 theme_override_colors/font_color = Color(1, 0.727771, 0.683716, 1)
 theme_override_fonts/font = ExtResource("1_osmjo")
 theme_override_font_sizes/font_size = 65
 theme_override_styles/normal = SubResource("StyleBoxFlat_w1u0y")
-text = "Text"
+text = "Back"
