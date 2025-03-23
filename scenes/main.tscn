@@ -48,7 +48,6 @@ offset_left = 353.928
 offset_top = -307.422
 offset_right = 537.928
 offset_bottom = -217.422
-text = "Guess"
 
 [node name="WhoDunnit" parent="Camera2D" instance=ExtResource("7_5mgnv")]
 visible = false

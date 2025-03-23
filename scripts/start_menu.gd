@@ -12,7 +12,7 @@ func _ready() -> void:
 	original_camera_position = camera_2d.position 
 
 func _on_play_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/main.tscn")
+	get_tree().change_scene_to_file("res://scenes/cut_scene.tscn")
 
 func _on_credits_button_pressed() -> void:
 	settings_label.hide()

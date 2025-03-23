@@ -1,0 +1,122 @@
+[gd_scene load_steps=10 format=3 uid="uid://dp2rvo6looawc"]
+
+[ext_resource type="Script" path="res://scripts/cut_scene.gd" id="1_qpqeb"]
+[ext_resource type="Texture2D" uid="uid://ca5cf6g2jeove" path="res://assets/chacters/Joi_Launda.png" id="2_twi36"]
+[ext_resource type="Texture2D" uid="uid://bnbeywxhtaaw6" path="res://assets/chacters/Jennifer_Soum.png" id="3_27vnu"]
+[ext_resource type="Texture2D" uid="uid://bc5qxvj4cjajr" path="res://assets/chacters/Chiri_de_Pomme.png" id="4_erwcf"]
+[ext_resource type="Texture2D" uid="uid://bfvtpi7vnxsjf" path="res://assets/chacters/Loni_Johnson.png" id="5_os6cs"]
+[ext_resource type="Texture2D" uid="uid://cummx5jj1p6bw" path="res://assets/chacters/Pamlet_Hemmingsworth.png" id="6_cnl7u"]
+[ext_resource type="Texture2D" uid="uid://3ubbuxa44t6i" path="res://assets/chacters/Anwar_Isai.png" id="7_dnwmj"]
+[ext_resource type="Texture2D" uid="uid://cauxbgwh7orpb" path="res://assets/chacters/Inoue_Isai.png" id="8_qe7v6"]
+[ext_resource type="FontFile" uid="uid://dvg5f6wpeu2t3" path="res://assets/fonts/title_font.ttf" id="9_1gui2"]
+
+[node name="Cut_Scene" type="Node2D"]
+script = ExtResource("1_qpqeb")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0627451, 0.0627451, 0.0627451, 1)
+
+[node name="JoiText" type="Node2D" parent="."]
+visible = false
+
+[node name="JoiLaundaLabel" type="Label" parent="JoiText"]
+offset_left = 40.0
+offset_right = 1112.0
+offset_bottom = 648.0
+theme_override_font_sizes/font_size = 70
+text = "Joi Launda, lead actor in The Silent Witness, has been murdered. "
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="JoiSprite" type="Sprite2D" parent="JoiText"]
+position = Vector2(936, 504)
+rotation = 0.71733
+scale = Vector2(4.5, 4.5)
+texture = ExtResource("2_twi36")
+
+[node name="DetectiveText" type="Node2D" parent="."]
+visible = false
+
+[node name="Label" type="Label" parent="DetectiveText"]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 1088.0
+offset_bottom = 491.0
+theme_override_font_sizes/font_size = 60
+text = "Luckily for you, Detective, they were murdered during a masquerade party for the movie's release on a train. "
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="JenniferSoum" type="Sprite2D" parent="DetectiveText"]
+position = Vector2(248, 528)
+scale = Vector2(2.15517, 2.36928)
+texture = ExtResource("3_27vnu")
+
+[node name="Chiri" type="Sprite2D" parent="DetectiveText"]
+position = Vector2(384, 536)
+scale = Vector2(2.01724, 2.01724)
+texture = ExtResource("4_erwcf")
+
+[node name="Loni" type="Sprite2D" parent="DetectiveText"]
+position = Vector2(528, 536)
+scale = Vector2(2.11207, 2.11207)
+texture = ExtResource("5_os6cs")
+
+[node name="Pamlet" type="Sprite2D" parent="DetectiveText"]
+position = Vector2(664, 536)
+scale = Vector2(2.01724, 2.01724)
+texture = ExtResource("6_cnl7u")
+
+[node name="Anwar" type="Sprite2D" parent="DetectiveText"]
+position = Vector2(800, 536)
+scale = Vector2(1.87931, 1.87931)
+texture = ExtResource("7_dnwmj")
+
+[node name="Inoue" type="Sprite2D" parent="DetectiveText"]
+position = Vector2(936, 544)
+scale = Vector2(2.01724, 2.01724)
+texture = ExtResource("8_qe7v6")
+
+[node name="UnfortunateText" type="Node2D" parent="."]
+visible = false
+
+[node name="Label" type="Label" parent="UnfortunateText"]
+offset_left = 121.0
+offset_top = 120.0
+offset_right = 1033.0
+offset_bottom = 513.0
+theme_override_font_sizes/font_size = 70
+text = "Unfortunately, you can only make one arrest, and you must decide who did it before they leave…"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="MurderTrain" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="MurderTrain"]
+offset_left = 136.0
+offset_top = 216.0
+offset_right = 1023.0
+offset_bottom = 416.0
+theme_override_colors/font_color = Color(0.65098, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_1gui2")
+theme_override_font_sizes/font_size = 200
+text = "The Murder Train"
+
+[node name="Button" type="Button" parent="MurderTrain"]
+visible = false
+offset_left = 522.0
+offset_top = 488.0
+offset_right = 631.0
+offset_bottom = 565.0
+theme_override_font_sizes/font_size = 50
+text = "Play"
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="pressed" from="MurderTrain/Button" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
