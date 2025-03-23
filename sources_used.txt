@@ -2,7 +2,7 @@ Basic Train Cars:
 	https://kooky.itch.io/pixel-train
 
 Background:
-	https://edermunizz.itch.io/
+	https://edermunizz.itch.io/free-pixel-art-forest
 
 Temp Items:
 	https://alexs-assets.itch.io/16x16-rpg-item-pack?download
@@ -10,5 +10,6 @@ Temp Items:
 Fancy Chairs:
 	https://www.deviantart.com/silvervoidart/art/Pixel-Chairs-02-923150047
 
-Font:
+Fonts:
 	https://www.fontspace.com/typewriter-font-f5889
+	https://www.fontspace.com/waptype

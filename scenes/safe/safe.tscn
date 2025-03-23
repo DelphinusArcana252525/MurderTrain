@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://bjuamu8vbbgub"]
+
+[ext_resource type="Script" path="res://scripts/safe.gd" id="1_k2luc"]
+[ext_resource type="Texture2D" uid="uid://dtxd6jt3cbau1" path="res://assets/safe/open_safe.png" id="2_g444x"]
+[ext_resource type="PackedScene" uid="uid://ca8ma11swq5vi" path="res://scenes/clickable_items/clickable_key.tscn" id="3_mdwvk"]
+[ext_resource type="Texture2D" uid="uid://v3pa666tejfj" path="res://assets/safe/closed_safepng.png" id="4_sq233"]
+[ext_resource type="PackedScene" uid="uid://chb1yo53re04c" path="res://scenes/safe/key_pad.tscn" id="5_c685t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2hh54"]
+size = Vector2(191, 192)
+
+[node name="Safe" type="Area2D"]
+script = ExtResource("1_k2luc")
+
+[node name="SafeBody" type="Sprite2D" parent="."]
+scale = Vector2(12, 12)
+texture = ExtResource("2_g444x")
+
+[node name="ClickableKey" parent="." instance=ExtResource("3_mdwvk")]
+visible = false
+scale = Vector2(8, 8)
+
+[node name="SafeDoor" type="Sprite2D" parent="."]
+scale = Vector2(12, 12)
+texture = ExtResource("4_sq233")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_2hh54")
+
+[node name="KeyPad" parent="." instance=ExtResource("5_c685t")]
+visible = false
+offset_left = -173.0
+offset_top = -330.0
+offset_right = -133.0
+offset_bottom = -290.0
+scale = Vector2(2, 2)
+
+[connection signal="unlocked" from="KeyPad" to="." method="_on_key_pad_unlocked"]

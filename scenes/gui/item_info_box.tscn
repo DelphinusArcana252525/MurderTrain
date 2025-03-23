@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/item_info_box.gd" id="1_8rdoo"]
 [ext_resource type="Texture2D" uid="uid://bmmluttwsy65b" path="res://assets/gui/item_info_box.png" id="1_xlidk"]
-[ext_resource type="FontFile" uid="uid://v2wkraa5704a" path="res://assets/item_font.ttf" id="3_yftky"]
+[ext_resource type="FontFile" uid="uid://v2wkraa5704a" path="res://assets/fonts/item_font.ttf" id="3_yftky"]
 
 [node name="ItemInfoBox" type="Node2D"]
 z_index = -1
