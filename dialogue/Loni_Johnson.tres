@@ -24,17 +24,69 @@ nodes = {
 },
 1: {
 "condition": {},
-"link": "END",
+"link": &"1_8",
 "text": "Who is..."
 },
 2: {
 "condition": {},
-"link": "END",
+"link": &"1_5",
 "text": "What is..."
 }
 },
-"size": Vector2(300, 289),
+"size": Vector2(300, 322),
 "speaker": "Loni Johnson"
+},
+"1_10": {
+"dialogue": "Oh, Inoue’s great. We get coffee every Tuesday. Well, most Tuesdays. We try. Look, work’s a lot and I don’t always make it. But when I do, it’s a great time. ",
+"offset": Vector2(1317.76, 551.494),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Loni Johnson"
+},
+"1_11": {
+"dialogue": "She’s so confident she’s going to get Rosalyn, and she’s probably right, and I’m really annoyed about it. She could have any role in the world, and she decides to compete for mine. Frankly, with how she acts, I’d be surprised if she had any friends. ",
+"offset": Vector2(972.468, 864.883),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Loni Johnson"
+},
+"1_12": {
+"dialogue": "Chiri de Pomme puts a lot of energy and dedication into their work, which is part of why I want to work with them. They’re directing Titanic III, so if you see them, could you put in a good word for me?",
+"offset": Vector2(1334.29, 910.337),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Loni Johnson"
+},
+"1_13": {
+"dialogue": "",
+"offset": Vector2(60, 760),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": ""
 },
 "1_2": {
 "dialogue": "Well, I’m an actress and soon to audition for Titanic III. I’m really hoping to get the role, and I bet it’s going to be my big break. ",
@@ -44,9 +96,14 @@ nodes = {
 "condition": {},
 "link": &"1_3",
 "text": "Why'd you throw the party?"
+},
+1: {
+"condition": {},
+"link": &"1_4",
+"text": "Who else is auditioning?"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Loni Johnson"
 },
 "1_3": {
@@ -59,10 +116,108 @@ nodes = {
 "text": "Thank you"
 }
 },
+"size": Vector2(300, 256),
+"speaker": "Loni Johnson"
+},
+"1_4": {
+"dialogue": "Jennifer Soum and Joi Launda. Oh. I guess it’s just me and Jennifer now. Geez, that’s going to take some getting used to. ",
+"offset": Vector2(1133.93, -77.24),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Loni Johnson"
+},
+"1_5": {
+"dialogue": ".",
+"offset": Vector2(700, -80),
+"options": {
+0: {
+"condition": {},
+"link": &"1_6",
+"text": "The party"
+},
+1: {
+"condition": {},
+"link": &"1_7",
+"text": "The safe"
+}
+},
+"size": Vector2(300, 256),
+"speaker": "Select"
+},
+"1_6": {
+"dialogue": "Sure, I threw it to honor the amazing work of Joi and Pamlet, and also to ingratiate myself with Chiri de Pomme. Have you seen The Silent Witness? No? Okay, there’s a scene where they all go to a masquerade party, so I decided to theme it after that. ",
+"offset": Vector2(1095.21, 225.26),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Loni Johnson"
+},
+"1_7": {
+"dialogue": "Oh, yeah. I put that there mostly as decoration, since the Silent Witness Joi played used lots of safes. I’m not sure if anyone put anything in it, but it is functional. The code is 2025, the year Silent Witness was released. ",
+"offset": Vector2(1444.9, 230.1),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Loni Johnson"
+},
+"1_8": {
+"dialogue": ".",
+"offset": Vector2(534.286, 326.701),
+"options": {
+0: {
+"condition": {},
+"link": &"1_9",
+"text": "Joi Launda"
+},
+1: {
+"condition": {},
+"link": &"1_10",
+"text": "Inoue Isai"
+},
+2: {
+"condition": {},
+"link": &"1_11",
+"text": "Jennifer Soum"
+},
+3: {
+"condition": {},
+"link": &"1_12",
+"text": "Chiri de Pomme"
+}
+},
+"size": Vector2(300, 289),
+"speaker": "Select a character"
+},
+"1_9": {
+"dialogue": "Well, they were the lead in Silent Witness, and that’s why I invited them, but I don’t know them -- didn’t know them -- very well. I think they were the third person auditioning for Rosalyn in Titanic III, but everyone knew they weren’t going to get it. They did well in Silent Witness though. ",
+"offset": Vector2(940.898, 506.866),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
 "size": Vector2(300, 240),
 "speaker": "Loni Johnson"
 }
 }
 variables = {}
-strays = Array[String]([])
+strays = Array[String](["1_13"])
 characters = ""

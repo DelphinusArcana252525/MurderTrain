@@ -46,7 +46,7 @@ nodes = {
 "text": "What are you writing now?"
 }
 },
-"size": Vector2(300, 256),
+"size": Vector2(300, 289),
 "speaker": "Inoue Isai"
 },
 "1_3": {
@@ -59,7 +59,7 @@ nodes = {
 "text": "Thank you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Inoue Isai"
 },
 "1_4": {
@@ -72,7 +72,7 @@ nodes = {
 "text": "Thank you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Inoue Isai"
 },
 "1_5": {
@@ -100,7 +100,7 @@ nodes = {
 "text": "Joi Launda"
 }
 },
-"size": Vector2(320, 289),
+"size": Vector2(320, 322),
 "speaker": "Select a person"
 },
 "1_6": {
@@ -113,11 +113,11 @@ nodes = {
 "text": "Thank you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Inoue Isai"
 },
 "1_7": {
-"dialogue": "She’s really fun but constantly flaking. Super dedicated to her work. We have coffee sometimes, and chat about our favourite movies. We’re hoping to make a film of our own some day. ",
+"dialogue": "She’s really fun but constantly flaking, so I’m kind of surprised she pulled her act together for this party. . Super dedicated to her work. We have coffee sometimes, and chat about our favourite movies. We’re hoping to make a film of our own some day. ",
 "offset": Vector2(797.489, 424.036),
 "options": {
 0: {
@@ -126,7 +126,7 @@ nodes = {
 "text": "Thank you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Inoue Isai"
 },
 "1_8": {
@@ -139,7 +139,7 @@ nodes = {
 "text": "Thank you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 256),
 "speaker": "Inoue Isai"
 }
 }

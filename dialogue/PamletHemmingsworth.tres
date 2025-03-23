@@ -296,7 +296,7 @@ nodes = {
 "speaker": "Select a movie"
 },
 "1_8": {
-"dialogue": "I worked with her maybe five years ago. She’s a great actress, but she wasn’t very friendly with the others on set. I think she’s auditioning for Titanic III?",
+"dialogue": "I worked with her maybe five years ago. She’s a great actress, but she wasn’t very friendly with the others on set. I think she’s auditioning for Titanic III? Oh, and she threw this party, which I really appreciate. ",
 "offset": Vector2(1100, -60),
 "options": {
 0: {
