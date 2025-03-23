@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cd6gpfyla8vi8"]
 
 [ext_resource type="Script" path="res://scripts/new_item_text.gd" id="1_jtk5p"]
-[ext_resource type="FontFile" uid="uid://v2wkraa5704a" path="res://assets/item_font.ttf" id="2_rk5cs"]
+[ext_resource type="FontFile" uid="uid://v2wkraa5704a" path="res://assets/fonts/item_font.ttf" id="2_rk5cs"]
 
 [node name="NewItemText" type="CenterContainer"]
 offset_left = 216.0

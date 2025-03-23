@@ -8,7 +8,7 @@ func _ready() -> void:
 
 func _input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("restart"):
-		get_tree().reload_current_scene()
+		get_tree().change_scene_to_file("res://scenes/start_menu.tscn")
 
 func _on_guess_button_pressed() -> void:
 	$Camera2D/Inventory.hide()

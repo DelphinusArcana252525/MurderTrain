@@ -1,38 +1,189 @@
-[gd_scene load_steps=2 format=3 uid="uid://cuma5kiavq5no"]
+[gd_scene load_steps=23 format=3 uid="uid://cuma5kiavq5no"]
 
 [ext_resource type="Script" path="res://scripts/start_menu.gd" id="1_o7gqu"]
+[ext_resource type="FontFile" uid="uid://dvg5f6wpeu2t3" path="res://assets/fonts/title_font.ttf" id="2_rj0ah"]
+[ext_resource type="PackedScene" uid="uid://cmxexwbnaj6yo" path="res://scenes/scene_bases/button_base.tscn" id="2_ud0ha"]
+[ext_resource type="Texture2D" uid="uid://ctg8sv13j7u67" path="res://assets/train_cars/flipped_engine_sprite_sheet.png" id="4_l8mj7"]
+[ext_resource type="PackedScene" uid="uid://d37efhh7cef6l" path="res://scenes/background.tscn" id="5_58a76"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uhqsp"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(0, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hotv2"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(256, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8d4f"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(512, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ibkv"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(768, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t5rog"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(1024, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5r1v7"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(1280, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfufp"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(1536, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8uuf"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(1792, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_we477"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(2048, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2aumy"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(2304, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5xh1q"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(2560, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bvx28"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(2816, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t11py"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(3072, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yg50a"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(3328, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogh00"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(3584, 0, 256, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fxmi2"]
+atlas = ExtResource("4_l8mj7")
+region = Rect2(3840, 0, 256, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u2g41"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uhqsp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hotv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8d4f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ibkv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t5rog")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5r1v7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rfufp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8uuf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_we477")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2aumy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5xh1q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bvx28")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t11py")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yg50a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogh00")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fxmi2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
 
 [node name="StartMenu" type="Node2D"]
 position = Vector2(560, 324)
 script = ExtResource("1_o7gqu")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -559.0
+[node name="BackgroundTint" type="ColorRect" parent="."]
+z_index = -4
+offset_left = -576.0
 offset_top = -324.0
-offset_right = 561.0
-offset_bottom = 324.0
-color = Color(0, 0, 0, 1)
+offset_right = 593.0
+offset_bottom = 326.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.443137)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-offset_left = -508.922
-offset_top = -242.498
-offset_right = -247.922
-offset_bottom = -115.498
-scale = Vector2(4, 4)
-metadata/_edit_group_ = true
-
-[node name="Label" type="Label" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 41
+[node name="Title" type="Label" parent="."]
+offset_left = -509.566
+offset_top = -335.364
+offset_right = 488.434
+offset_bottom = -135.364
+theme_override_colors/font_color = Color(0.652227, 2.04556e-06, 1.44392e-07, 1)
+theme_override_fonts/font = ExtResource("2_rj0ah")
+theme_override_font_sizes/font_size = 200
 text = "Murder Train"
 
-[node name="PlayButton" type="Button" parent="VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = -516.873
+offset_top = -150.218
+offset_right = 120.127
+offset_bottom = 269.782
+theme_override_constants/separation = 20
+metadata/_edit_group_ = true
+
+[node name="PlayButton" parent="VBoxContainer" instance=ExtResource("2_ud0ha")]
 layout_mode = 2
 text = "Play"
 
-[node name="CreditsButton" type="Button" parent="VBoxContainer"]
+[node name="CreditsButton" parent="VBoxContainer" instance=ExtResource("2_ud0ha")]
 layout_mode = 2
 text = "Credits"
 
+[node name="SettingsButton" parent="VBoxContainer" instance=ExtResource("2_ud0ha")]
+layout_mode = 2
+text = "Settings"
+
+[node name="QuitButton" parent="VBoxContainer" instance=ExtResource("2_ud0ha")]
+layout_mode = 2
+text = "Quit"
+
+[node name="Engine" type="AnimatedSprite2D" parent="."]
+position = Vector2(557.122, 152.002)
+rotation = -6.28319
+scale = Vector2(5.3852, 5.3852)
+sprite_frames = SubResource("SpriteFrames_u2g41")
+frame_progress = 0.783596
+
+[node name="Background" parent="." instance=ExtResource("5_58a76")]
+speed = 0.0
+
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

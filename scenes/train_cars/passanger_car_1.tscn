@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dr0vo0xnlnlow" path="res://scenes/clickable_items/clickable_poster_1.tscn" id="3_1dsxt"]
 [ext_resource type="PackedScene" uid="uid://cx8a4a6eq2x6e" path="res://scenes/characters/chiri_de_pomme.tscn" id="4_bvu1q"]
 [ext_resource type="PackedScene" uid="uid://6urus7fk2xww" path="res://scenes/characters/loni_johnson.tscn" id="5_xbhoi"]
-[ext_resource type="PackedScene" uid="uid://bjuamu8vbbgub" path="res://scenes/safe.tscn" id="5_xqub5"]
+[ext_resource type="PackedScene" uid="uid://bjuamu8vbbgub" path="res://scenes/safe/safe.tscn" id="5_xqub5"]
 
 [node name="PassangerCar1" instance=ExtResource("1_f6y3y")]
 
