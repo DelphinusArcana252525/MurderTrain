@@ -20,8 +20,8 @@ func _on_inoue_isai_clicked() -> void:
 
 func fail() -> void:
 	$LoseScreen.show()
-	print("nope")
+	#print("nope")
 
 func win() -> void:
 	$WinScreen.show()
-	print("yep")
+	#print("yep")
