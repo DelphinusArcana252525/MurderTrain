@@ -24,34 +24,225 @@ nodes = {
 },
 1: {
 "condition": {},
-"link": "END",
+"link": &"1_3",
 "text": "Who is..."
 },
 2: {
 "condition": {},
-"link": "END",
+"link": &"1_4",
 "text": "What is..."
+}
+},
+"size": Vector2(300, 322),
+"speaker": "Chiri de Pomme"
+},
+"1_10": {
+"dialogue": "Yeah…ugh. She’s an amazing actress. Truly spectacular. I kind of wish she’d shut up about how good she is once in a while, but everything she says is true. Truth be told, we’re leaning towards her for Rosalyn, but we’ll see how the audition goes. If you see her, tell her to be a little less stuck-up, wouldja?",
+"offset": Vector2(1500, 360),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Sure thing"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Chiri de Pomme"
+},
+"1_11": {
+"dialogue": "Pamlet’s been somewhat of a mentor to me. As you know, he produced Silent Witness, and he’s an excellent director in general. Treats his cast well, makes the film process fun, and has great products at the end. ",
+"offset": Vector2(1140, 520),
+"options": {
+0: {
+"condition": {},
+"link": &"1_12",
+"text": "Have you two had any professional disputes?"
+},
+1: {
+"condition": {},
+"link": &"1_13",
+"text": "Tell me about the Silent Witness"
+}
+},
+"size": Vector2(300, 256),
+"speaker": "Chiri de Pomme"
+},
+"1_12": {
+"dialogue": "Oh, we’ve had some Oscar competition, but nothing dramatic. ",
+"offset": Vector2(1520, 640),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Chiri de Pomme"
+},
+"1_13": {
+"dialogue": "Yeah, it’s a great movie with a super interesting plot and a lot of well-done camera work. When I’m watching a movie, I rarely forget that I am, but this one put me right in its world. Joi Launda was starring in it, and I’m going to be honest, for a last role, this one was amazing. ",
+"offset": Vector2(1900, 280),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Chiri de Pomme"
+},
+"1_14": {
+"dialogue": "Sure. Loni’s a hard worker, and very motivated. I think she’s the one most excited to get the role in Titanic III, but it remains to be seen whether she’s the most talented. To be sure, she’d make a great Rosalyn. Oh, and she threw this party, which was really nice of her to do. ",
+"offset": Vector2(1140, 840),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Chiri de Pomme"
+},
+"1_2": {
+"dialogue": "Well, I’m a director and producer. I’ve been in the industry for almost 8 years, and I’m currently working on Titanic III. I’m really excited about it. We start auditions next week.",
+"offset": Vector2(740, -260),
+"options": {
+0: {
+"condition": {},
+"link": &"1_5",
+"text": "How did you get invited?"
+},
+1: {
+"condition": {},
+"link": &"1_6",
+"text": "Tell me about Titanic III"
+},
+2: {
+"condition": {},
+"link": &"1_7",
+"text": "Who's auditioning?"
 }
 },
 "size": Vector2(300, 289),
 "speaker": "Chiri de Pomme"
 },
-"1_2": {
-"dialogue": "Well, I’m a director and producer. I’ve been in the industry for almost 8 years, and I’m currently working on Titanic III. I’m really excited about it. We start auditions in a couple weeks. ",
-"offset": Vector2(748, -226),
+"1_3": {
+"dialogue": ".",
+"offset": Vector2(740, 400),
+"options": {
+0: {
+"condition": {},
+"link": &"1_9",
+"text": "Joi Launda"
+},
+1: {
+"condition": {},
+"link": &"1_10",
+"text": "Jennifer Soum"
+},
+2: {
+"condition": {},
+"link": &"1_11",
+"text": "Pamlet Hemmingsworth"
+},
+3: {
+"condition": {},
+"link": &"1_14",
+"text": "Loni Johnson"
+}
+},
+"size": Vector2(300, 289),
+"speaker": "Select a character"
+},
+"1_4": {
+"dialogue": ".",
+"offset": Vector2(740, 80),
+"options": {
+0: {
+"condition": {},
+"link": &"1_6",
+"text": "Titanic III"
+},
+1: {
+"condition": {},
+"link": &"1_13",
+"text": "The Silent Witness"
+}
+},
+"size": Vector2(300, 256),
+"speaker": "Select a movie"
+},
+"1_5": {
+"dialogue": "To be honest, I think Loni Johnson is sucking up to me, since she’s auditioning for the lead role in Titanic III. ",
+"offset": Vector2(1131.9, -444.938),
 "options": {
 0: {
 "condition": {},
 "link": "END",
-"text": "How did you get invited?"
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Chrir de Pomme"
+},
+"1_6": {
+"dialogue": "The film tells the heart-wrenching and ultimately heart-breaking story of someone searching for her lost love. I won’t spoil the ending, but rest assured there will be revelations and extremely emotional scenes. We’re in the audition phase right now, with the auditions for Rosalyn happening next week.",
+"offset": Vector2(1140, -160),
+"options": {
+0: {
+"condition": {},
+"link": &"1_7",
+"text": "Who's auditioning?"
 },
 1: {
 "condition": {},
-"link": "END",
-"text": "Tell me about Titanic II"
+"link": &"1_8",
+"text": "Who's writing?"
 }
 },
 "size": Vector2(300, 256),
+"speaker": "Chiri de Pomme"
+},
+"1_7": {
+"dialogue": "For the lead role, Jennifer Soum, Loni Johnson, and…well. Joi Launda was. ",
+"offset": Vector2(1500, -260),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Chiri de Pomme"
+},
+"1_8": {
+"dialogue": "Well, I am doing much of the writing myself. We are also still in the process of finding writers. I believe Inoue Isai, who is here today, is looking to apply.",
+"offset": Vector2(1513.56, 52.4324),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Chiri de Pomme"
+},
+"1_9": {
+"dialogue": "I’m afraid I can’t help you much there. They were the lead in Silent Witness, but you know that already. They were signed up to audition for Titanic III, but we never considered them very strongly, since I don’t think they would have fit the role very well. ",
+"offset": Vector2(1140, 220),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
 "speaker": "Chiri de Pomme"
 }
 }
