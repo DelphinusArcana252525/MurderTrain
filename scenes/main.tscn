@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dtq0bgudccr58"]
+[gd_scene load_steps=9 format=3 uid="uid://dtq0bgudccr58"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_qqq60"]
 [ext_resource type="PackedScene" uid="uid://d37efhh7cef6l" path="res://scenes/background.tscn" id="2_avuoc"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://byd0yup8koql0" path="res://scenes/train.tscn" id="4_k3nma"]
 [ext_resource type="PackedScene" uid="uid://j4id8px05fs6" path="res://scenes/who_dunnit.tscn" id="7_5mgnv"]
 [ext_resource type="Script" path="res://scripts/camera_2d.gd" id="7_b0w5v"]
+[ext_resource type="PackedScene" uid="uid://cmxexwbnaj6yo" path="res://scenes/scene_bases/button_base.tscn" id="7_r0h8x"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_qqq60")
@@ -42,13 +43,11 @@ z_index = 3
 position = Vector2(-574, -126)
 metadata/_edit_lock_ = true
 
-[node name="GuessButton" type="Button" parent="Camera2D"]
-z_index = 10
-offset_left = 408.0
-offset_top = -316.0
-offset_right = 532.0
-offset_bottom = -253.0
-theme_override_font_sizes/font_size = 40
+[node name="GuessButton" parent="Camera2D" instance=ExtResource("7_r0h8x")]
+offset_left = 353.928
+offset_top = -307.422
+offset_right = 537.928
+offset_bottom = -217.422
 text = "Guess"
 
 [node name="WhoDunnit" parent="Camera2D" instance=ExtResource("7_5mgnv")]
