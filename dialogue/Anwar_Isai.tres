@@ -24,24 +24,153 @@ nodes = {
 "options": {
 0: {
 "condition": {},
-"link": "END",
+"link": &"1_2",
 "text": "Tell me about yourself"
 },
 1: {
 "condition": {},
-"link": "END",
+"link": &"1_3",
 "text": "Who is..."
 },
 2: {
 "condition": {},
-"link": "END",
-"text": "What is..."
+"link": &"1_8",
+"text": "What is The Silent Witness?"
+}
+},
+"size": Vector2(300, 322),
+"speaker": "Anwar Isai"
+},
+"1_2": {
+"dialogue": "Well, I’m an actress and have starred in lots of big films. In between roles, I like to do some outreach, finding and teaching up-and-coming actors. Inoue here is my sister. ",
+"offset": Vector2(160, -580),
+"options": {
+0: {
+"condition": {},
+"link": &"1_9",
+"text": "Do you have any big roles soon?"
+},
+1: {
+"condition": {},
+"link": &"1_6",
+"text": "Tell me about your sister"
+}
+},
+"size": Vector2(300, 256),
+"speaker": "Anwar Isai"
+},
+"1_3": {
+"dialogue": ".",
+"offset": Vector2(204, -253.273),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": "Joi Launda"
+},
+1: {
+"condition": {},
+"link": &"1_5",
+"text": "Jennifer Soum"
+},
+2: {
+"condition": {},
+"link": &"1_6",
+"text": "Inoue Isai"
+},
+3: {
+"condition": {},
+"link": &"1_7",
+"text": "Pamlet Hemmingsworth"
 }
 },
 "size": Vector2(300, 289),
+"speaker": "Select a character"
+},
+"1_4": {
+"dialogue": "We were good friends, working together in some good films and rising from extras to stars together. I’m shocked about their death, especially since this party was supposed to be celebrating their amazing work. ",
+"offset": Vector2(940, -180),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
 "speaker": "Anwar Isai"
+},
+"1_5": {
+"dialogue": "She can be annoying at times, but she’s nice once she likes you. She’s a great actress, too, even if she won’t shut up about it. She’s hoping to star in Titanic III. I heard she and Joi had a falling out a few years ago, but I haven’t heard much about it since. ",
+"offset": Vector2(600, -120),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Anwar Isai"
+},
+"1_6": {
+"dialogue": "She’s my younger sister, though to tell you the truth, she usually acts like the older one. She looks out for me, does lots of networking and makes sure I’m doing well. I’m really grateful for her. ",
+"offset": Vector2(595.324, -454.641),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Anwar Isai"
+},
+"1_7": {
+"dialogue": "Pamlet knows everything about everything in the film industry. He directed the second film I had a named role in, and supported all of us young actors as we found our style. He’s a great director and a great person too. ",
+"offset": Vector2(593.821, 211.024),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Anwar Isai"
+},
+"1_8": {
+"dialogue": "It’s a great movie, and I really liked how Joi played the silent witness. Honestly, I think they did a better job than I would have. I did audition for the same role as Joi, but it didn’t affect our friendship. ",
+"offset": Vector2(206.143, 167.448),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Anwar Isai"
+},
+"1_9": {
+"dialogue": "No. I’m auditioning for a small part in Titanic III, but nothing big. I might see what Pamlet is doing for their next film, since working with them was a blast. ",
+"offset": Vector2(580, -740),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Thank you"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Anwar Isai"
+},
+"2_1": {
+"comment": "",
+"offset": Vector2(160, 300),
+"size": Vector2(200, 100)
 }
 }
 variables = {}
-strays = Array[String](["0_2"])
+strays = Array[String](["0_2", "2_1"])
 characters = ""
