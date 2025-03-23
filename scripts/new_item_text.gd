@@ -6,7 +6,6 @@ var should_fade : bool = false
 
 func _ready() -> void:
 	modulate.a = .75
-	timer.start(4)
 
 func _process(_delta: float) -> void:
 	if should_fade:
@@ -16,6 +15,10 @@ func _process(_delta: float) -> void:
 		# oddly this had bugs so I am removing it
 		# queue_free()
 		should_fade = false
+
+func appear () -> void:
+	show()
+	timer.start(4)
 
 func _on_timer_timeout() -> void:
 	should_fade = true

@@ -14,4 +14,4 @@ func add_item(item: String):
 	grid_container.add_child(load(FILE_PATH % item).instantiate()) 
 	if is_first_item:
 		is_first_item = false
-		new_item_text.show()
+		new_item_text.appear()
