@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://d12psxu0mst2f"]
+[gd_scene load_steps=8 format=3 uid="uid://d12psxu0mst2f"]
 
 [ext_resource type="PackedScene" uid="uid://dvdev0cihpcus" path="res://scenes/scene_bases/passanger_car.tscn" id="1_f6y3y"]
 [ext_resource type="PackedScene" uid="uid://dr0vo0xnlnlow" path="res://scenes/clickable_items/clickable_poster_1.tscn" id="3_1dsxt"]
 [ext_resource type="PackedScene" uid="uid://cx8a4a6eq2x6e" path="res://scenes/characters/chiri_de_pomme.tscn" id="4_bvu1q"]
 [ext_resource type="PackedScene" uid="uid://6urus7fk2xww" path="res://scenes/characters/loni_johnson.tscn" id="5_xbhoi"]
 [ext_resource type="PackedScene" uid="uid://bjuamu8vbbgub" path="res://scenes/safe/safe.tscn" id="5_xqub5"]
+[ext_resource type="Texture2D" uid="uid://cwf4vlhcv5hfc" path="res://assets/decorations/plants.png" id="6_ayhqr"]
+[ext_resource type="Texture2D" uid="uid://frv7gpdj0qe4" path="res://assets/decorations/fancy_chairs.png" id="7_x5mlr"]
 
 [node name="PassangerCar1" instance=ExtResource("1_f6y3y")]
 
@@ -22,3 +24,17 @@ scale = Vector2(0.3, 0.3)
 [node name="Safe" parent="." index="5" instance=ExtResource("5_xqub5")]
 position = Vector2(24.6332, 11.3882)
 scale = Vector2(0.1, 0.1)
+
+[node name="Plants" type="Sprite2D" parent="." index="6"]
+position = Vector2(26, -6)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_ayhqr")
+region_enabled = true
+region_rect = Rect2(125.758, 159.735, 22.9397, 29.2564)
+
+[node name="FancyChairs" type="Sprite2D" parent="." index="7"]
+position = Vector2(-50, 6)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_x5mlr")
+region_enabled = true
+region_rect = Rect2(130.584, 191.636, 80.2993, 162.581)

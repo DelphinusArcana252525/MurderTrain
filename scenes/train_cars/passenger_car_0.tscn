@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://bpfbxictggajv"]
+[gd_scene load_steps=8 format=3 uid="uid://bpfbxictggajv"]
 
 [ext_resource type="PackedScene" uid="uid://dvdev0cihpcus" path="res://scenes/scene_bases/passanger_car.tscn" id="1_3dist"]
 [ext_resource type="PackedScene" uid="uid://b368ereypcg80" path="res://scenes/characters/pamlet_hemmingsworth.tscn" id="2_oo4vs"]
 [ext_resource type="PackedScene" uid="uid://b8cktdum5wi18" path="res://scenes/clickable_items/clickable_poster_0.tscn" id="3_f5o0p"]
 [ext_resource type="PackedScene" uid="uid://ciwp5ewant570" path="res://scenes/characters/jennifer_soum.tscn" id="4_pcbcn"]
+[ext_resource type="Texture2D" uid="uid://frv7gpdj0qe4" path="res://assets/decorations/fancy_chairs.png" id="5_pdlhe"]
+[ext_resource type="Texture2D" uid="uid://cwf4vlhcv5hfc" path="res://assets/decorations/plants.png" id="6_ws6g2"]
+[ext_resource type="Texture2D" uid="uid://cvuvw8mpxm28b" path="res://assets/decorations/table_white_31x12.png" id="7_xe1j0"]
 
 [node name="PassengerCar0" instance=ExtResource("1_3dist")]
 offset_left = 3.0633
@@ -21,3 +24,23 @@ position = Vector2(10.0944, -6.9363)
 [node name="Jennifer_Soum" parent="." index="4" instance=ExtResource("4_pcbcn")]
 position = Vector2(-43.1467, 3.87018)
 scale = Vector2(0.3, 0.3)
+
+[node name="FancyChairs" type="Sprite2D" parent="." index="5"]
+position = Vector2(-68.3133, 1.8307)
+scale = Vector2(0.219101, 0.219101)
+texture = ExtResource("5_pdlhe")
+region_enabled = true
+region_rect = Rect2(123.104, 10.2606, 89.5226, 177.446)
+
+[node name="Plants" type="Sprite2D" parent="." index="6"]
+position = Vector2(30.9367, 2.3279)
+scale = Vector2(0.590909, 0.590909)
+texture = ExtResource("6_ws6g2")
+region_enabled = true
+region_rect = Rect2(20.9931, 161.86, 22.7359, 26.5252)
+
+[node name="TableWhite31x12" type="Sprite2D" parent="." index="7"]
+position = Vector2(33.9367, 15.3279)
+texture = ExtResource("7_xe1j0")
+region_enabled = true
+region_rect = Rect2(91.9468, 0, 29.2564, 12)

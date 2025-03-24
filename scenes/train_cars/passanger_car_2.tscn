@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://5oetks7fp6vc"]
+[gd_scene load_steps=8 format=3 uid="uid://5oetks7fp6vc"]
 
 [ext_resource type="PackedScene" uid="uid://dvdev0cihpcus" path="res://scenes/scene_bases/passanger_car.tscn" id="1_5d4m0"]
 [ext_resource type="PackedScene" uid="uid://b8e8a05agr1om" path="res://scenes/clickable_items/clickable_plant.tscn" id="2_1mfi0"]
 [ext_resource type="PackedScene" uid="uid://dy0vqkteape55" path="res://scenes/clickable_items/clickable_bag.tscn" id="3_juwb3"]
 [ext_resource type="PackedScene" uid="uid://b4y7qmbinbtn6" path="res://scenes/characters/anwar_isai.tscn" id="4_ektia"]
 [ext_resource type="PackedScene" uid="uid://cxvk2uthawopy" path="res://scenes/characters/inoue_isai.tscn" id="5_4vhxa"]
+[ext_resource type="Texture2D" uid="uid://frv7gpdj0qe4" path="res://assets/decorations/fancy_chairs.png" id="6_4i8pw"]
+[ext_resource type="Texture2D" uid="uid://cwf4vlhcv5hfc" path="res://assets/decorations/plants.png" id="7_lheoc"]
 
 [node name="PassangerCar2" instance=ExtResource("1_5d4m0")]
 
@@ -19,5 +21,19 @@ position = Vector2(-16, 5)
 scale = Vector2(0.3, 0.3)
 
 [node name="Inoue_Isai" parent="." index="5" instance=ExtResource("5_4vhxa")]
-position = Vector2(-64.2806, 4.78954)
+position = Vector2(-64.2806, 5.78954)
 scale = Vector2(0.3, 0.3)
+
+[node name="FancyChairs" type="Sprite2D" parent="." index="6"]
+position = Vector2(-43, 4)
+scale = Vector2(0.234043, 0.234043)
+texture = ExtResource("6_4i8pw")
+region_enabled = true
+region_rect = Rect2(540.882, 361.273, 94.7123, 160.729)
+
+[node name="Plants" type="Sprite2D" parent="." index="7"]
+position = Vector2(-43, 2)
+scale = Vector2(0.552632, 0.552632)
+texture = ExtResource("7_lheoc")
+region_enabled = true
+region_rect = Rect2(72.3127, 138.616, 19.6366, 22.1821)

@@ -10,8 +10,8 @@
 position = Vector2(-0.75, 1.24136)
 
 [node name="Sprite2D" parent="." index="2"]
-position = Vector2(3.625, 0.0861969)
-scale = Vector2(1.78017, 1.78017)
+position = Vector2(-0.375035, -4.91384)
+scale = Vector2(1.9181, 1.91906)
 texture = ExtResource("2_gtcup")
 
 [node name="DialogueBox" parent="Control" index="0"]
