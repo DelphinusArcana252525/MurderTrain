@@ -13,6 +13,7 @@ bg_color = Color(0.173924, 0.337694, 0.35232, 1)
 bg_color = Color(0.10975, 0.231344, 0.242911, 1)
 
 [node name="KeyPad" type="Control"]
+z_index = 4
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0

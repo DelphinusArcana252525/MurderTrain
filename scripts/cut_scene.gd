@@ -12,10 +12,15 @@ func _ready() -> void:
 	$MurderTrain.hide()
 	time = 0
 	$Timer.start()
+	preload("res://scenes/main.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	preload("res://scenes/main.tscn")
+	pass
+
+func _input(event: InputEvent) -> void:
+	if (event.is_action_pressed("skip")):
+		get_tree().change_scene_to_file("res://scenes/main.tscn")
 
 func check_stuff() -> void:
 	if (time == BLANK_TIME):
